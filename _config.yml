@@ -1,3 +1,15 @@
-theme: jekyll-theme-minimal
 title: Rubén Sánchez-Ramírez
-description: Personal webpage
+description: Astrophysicist · Gamma-ray bursts · High-energy transients
+url: "https://rsramirez.github.io"
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - README.md
+  - _scripts/
+  - Gemfile
+  - Gemfile.lock
+  - .github/
+
