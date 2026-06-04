@@ -1,5 +1,5 @@
 /* publications.js — client-side filter, sort, and render engine
- * Reads window.PUBLICATIONS_DATA injected by Jekyll from _data/publications.json
+ * Fetches /assets/data/publications.json (static file written by fetch_publications.py)
  */
 (function () {
   "use strict";
@@ -7,6 +7,7 @@
   /* ── Constants ───────────────────────────────────────────────────────────── */
   const PAGE_SIZE    = 20;
   const DEBOUNCE_MS  = 200;
+  const DATA_URL     = "/assets/data/publications.json";
   // Matches Sánchez-Ramírez / Sanchez-Ramirez case-insensitively
   const AUTHOR_RE    = /s[aá]nchez[\s-]*ram[ií]rez/i;
   const MAX_AUTHORS  = 8;  // authors shown before "et al."
@@ -45,7 +46,23 @@
   function init() {
     resolveRefs();
 
-    const data = window.PUBLICATIONS_DATA;
+    fetch(DATA_URL)
+      .then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json();
+      })
+      .then(data => bootstrap(data))
+      .catch(() => {
+        if (el["pub-list"]) {
+          el["pub-list"].innerHTML = stateBox(
+            "Publications not yet loaded",
+            'The data will appear after the first <a href="https://github.com/rsramirez/rsramirez.github.io/actions" target="_blank" rel="noopener">GitHub Actions run</a>. Make sure the <code>ADS_DEV_KEY</code> secret is configured.'
+          );
+        }
+      });
+  }
+
+  function bootstrap(data) {
     if (!data || !Array.isArray(data.publications) || data.publications.length === 0) {
       if (el["pub-list"]) {
         el["pub-list"].innerHTML = stateBox(

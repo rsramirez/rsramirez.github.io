@@ -1,14 +1,5 @@
 ---
 layout: default
 ---
-{% if site.data.publications %}
-<script>
-const PUBLICATIONS_DATA = {{ site.data.publications | jsonify }};
-</script>
-{% else %}
-<script>
-const PUBLICATIONS_DATA = {"publications":[],"journals":[],"total":0,"updated":null};
-</script>
-{% endif %}
 {{ content }}
 <script src="{{ '/assets/js/publications.js' | relative_url }}"></script>

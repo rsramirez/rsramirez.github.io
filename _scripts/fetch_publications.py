@@ -242,14 +242,23 @@ def main() -> None:
         "publications": papers,
     }
 
-    out_path = os.path.join(os.path.dirname(__file__), "..", "_data", "publications.json")
-    out_path = os.path.normpath(out_path)
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    base = os.path.dirname(__file__)
 
-    with open(out_path, "w", encoding="utf-8") as fh:
+    # Primary output: static file served directly by GitHub Pages.
+    # The JS fetches it via fetch() — no Liquid/Jekyll processing needed.
+    out_static = os.path.normpath(os.path.join(base, "..", "assets", "data", "publications.json"))
+    os.makedirs(os.path.dirname(out_static), exist_ok=True)
+    with open(out_static, "w", encoding="utf-8") as fh:
         json.dump(output, fh, ensure_ascii=False, indent=2)
+    print(f"Written: {out_static}")
 
-    print(f"Written: {out_path}")
+    # Secondary output: keep _data/ copy for any future Jekyll/Liquid use.
+    out_data = os.path.normpath(os.path.join(base, "..", "_data", "publications.json"))
+    os.makedirs(os.path.dirname(out_data), exist_ok=True)
+    with open(out_data, "w", encoding="utf-8") as fh:
+        json.dump(output, fh, ensure_ascii=False, indent=2)
+    print(f"Written: {out_data}")
+
     print(f"Summary: {len(papers)} publications across {len(journals)} journals")
 
 
