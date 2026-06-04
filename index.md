@@ -22,6 +22,5 @@ title: Home
 </div>
 
 <div class="home-content">
-  <p>Welcome to my personal academic website. I am a researcher specialised in gamma-ray bursts, X-ray transients, and high-energy astrophysics.</p>
-  <p style="margin-top:1rem;">Browse my <a href="{{ '/publications/' | relative_url }}">publications</a> — automatically synchronised with NASA ADS and filterable by journal, year, citation count, and more.</p>
+  <p>Welcome to my personal academic website. </p>
 </div>
