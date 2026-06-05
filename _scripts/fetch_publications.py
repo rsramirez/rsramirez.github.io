@@ -116,8 +116,11 @@ def search_ads(token: str, orcid: str) -> list[dict]:
     GCN circulars, ATels, and some other record types store author names
     in "Firstname Lastname" order rather than the standard ADS "Lastname, F"
     format.  A search for author:"Sánchez-Ramírez, R" misses those entries.
+    Additionally, ADS only associates an ORCID with records that have been
+    explicitly claimed — so a pure orcid:{id} query misses GCNs, ATels, and
+    many arXiv preprints even when ORCID is available.
 
-    We therefore issue three complementary queries (name-based path):
+    We therefore always issue three name-based queries:
       1.  author:"Sánchez-Ramírez, R"        – standard papers / proceedings
       2.  author:"Sanchez-Ramirez, R"        – same without accent (redundant
                                                on accent-insensitive ADS, but
@@ -126,17 +129,27 @@ def search_ads(token: str, orcid: str) -> list[dict]:
                                                ATels that use first-name-first
                                                ordering or only an initial.
 
-    All three results are merged and deduplicated by bibcode before disambiguation.
+    When ORCID is available we also run a fourth orcid:{id} query to pick up
+    any papers that might not match by name alone.
+
+    All results are merged and deduplicated by bibcode before disambiguation.
     """
     year_now = datetime.now().year
+    seen:     set[str]   = set()
+    all_docs: list[dict] = []
 
     if orcid:
-        # ORCID search: single, definitive query — no need for name variants
+        # ORCID query: authoritative for any paper ADS has claimed
         query = f"orcid:{orcid}"
-        print(f"  Query: {query}")
-        return _run_query(token, query)
+        print(f"  Query [ORCID]: {query}")
+        docs = _run_query(token, query)
+        new  = [d for d in docs if d.get("bibcode") not in seen]
+        seen.update(d["bibcode"] for d in new)
+        all_docs.extend(new)
+        print(f"    → {len(new)} new records (total so far: {len(all_docs)})")
 
-    # Name-based: three queries to maximise recall
+    # Name-based: three queries to maximise recall (always run, regardless of ORCID,
+    # because GCNs/ATels/preprints are often not ORCID-linked in ADS)
     queries = [
         (f'author:"{AUTHOR_NAME}" year:{RESEARCH_START_YEAR}-{year_now}',
          "standard name with accent"),
@@ -145,9 +158,6 @@ def search_ads(token: str, orcid: str) -> list[dict]:
         (f'author:"Sanchez-Ramirez" year:{RESEARCH_START_YEAR}-{year_now}',
          "surname only (GCN/ATel/circular style)"),
     ]
-
-    seen:     set[str]   = set()
-    all_docs: list[dict] = []
 
     for q, label in queries:
         print(f"  Query [{label}]: {q}")
@@ -168,10 +178,13 @@ def is_target_author(paper: dict, orcid: str) -> bool:
     Handles both standard ADS format ("Sánchez-Ramírez, R.") and the
     first-name-first format used in GCN circulars / ATels
     ("R. Sánchez-Ramírez", "Ruben Sanchez-Ramirez", etc.).
-    """
-    if orcid:
-        return True
 
+    When ORCID is known:
+      - Accept immediately if the ORCID appears at the matching author position.
+      - Reject if a *different* ORCID appears there (foreign author).
+      - Otherwise fall through to name-based disambiguation (covers records
+        that were never ORCID-claimed in ADS, e.g. most GCNs and ATels).
+    """
     authors     = paper.get("author")     or []
     orcids_pub  = paper.get("orcid_pub")  or []
     orcids_user = paper.get("orcid_user") or []
@@ -182,12 +195,17 @@ def is_target_author(paper: dict, orcid: str) -> bool:
         if "nchez-ram" not in name_lc:
             continue
 
-        # Reject if ADS has a foreign ORCID at this position
         orcid_at = (
             (orcids_pub[i]  if i < len(orcids_pub)  else None)
             or
             (orcids_user[i] if i < len(orcids_user) else None)
         )
+
+        # ORCID at this position matches ours → authoritative accept
+        if orcid and orcid_at == orcid:
+            return True
+
+        # ADS has a *foreign* ORCID at this position → reject
         if orcid_at and orcid_at not in ("-", ""):
             return False
 
