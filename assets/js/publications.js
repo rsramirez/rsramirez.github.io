@@ -23,7 +23,8 @@
     yearTo:      9999,
     journal:     "",
     minCit:      0,
-    refereedOnly: false,
+    // catStates: 0 = included, 1 = excluded, 2 = show only
+    catStates:   { refereed: 0, preprint: 0, proceedings: 0, circular: 0 },
     sortBy:      "year",   // "year" | "citations" | "title"
   };
 
@@ -35,9 +36,10 @@
       "pub-list", "pub-summary", "pub-pagination",
       "pub-search", "pub-year-from", "pub-year-to",
       "pub-journal", "pub-min-citations", "pub-sort",
-      "pub-refereed-only", "pub-reset",
-      "pub-updated", "pub-total",
-      "stat-total", "stat-refereed", "stat-citations", "stat-hindex",
+      "pub-reset", "pub-updated", "pub-total",
+      "stat-total", "stat-refereed", "stat-preprint",
+      "stat-proceedings", "stat-circular",
+      "stat-citations", "stat-hindex",
     ];
     ids.forEach(id => { el[id] = document.getElementById(id); });
   }
@@ -111,23 +113,37 @@
     el["pub-year-to"]       && el["pub-year-to"].addEventListener("input",   onFilterChange);
     el["pub-journal"]       && el["pub-journal"].addEventListener("change",  onFilterChange);
     el["pub-min-citations"] && el["pub-min-citations"].addEventListener("input", debounce(onFilterChange, DEBOUNCE_MS));
-    el["pub-refereed-only"] && el["pub-refereed-only"].addEventListener("change", onFilterChange);
     el["pub-sort"]          && el["pub-sort"].addEventListener("change",    onSortChange);
     el["pub-reset"]         && el["pub-reset"].addEventListener("click",    onReset);
+
+    // ── Wire category filter stat cards ────────────────────────────────────
+    document.querySelectorAll(".stat-filter").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const cat = btn.dataset.cat;
+        filters.catStates[cat] = (filters.catStates[cat] + 1) % 3;
+        btn.dataset.state = filters.catStates[cat];
+        currentPage = 1;
+        applyAndRender();
+      });
+    });
 
     applyAndRender();
   }
 
   /* ── Stats ───────────────────────────────────────────────────────────────── */
   function renderStats(papers) {
-    const totalCit  = papers.reduce((s, p) => s + (p.citation_count || 0), 0);
-    const refereed  = papers.filter(p => p.refereed).length;
-    const hIndex    = computeHIndex(papers);
+    const totalCit = papers.reduce((s, p) => s + (p.citation_count || 0), 0);
+    const hIndex   = computeHIndex(papers);
+    const cats     = { refereed: 0, preprint: 0, proceedings: 0, circular: 0, other: 0 };
+    papers.forEach(p => { const c = getCategory(p); cats[c] = (cats[c] || 0) + 1; });
 
-    setText("stat-total",    papers.length);
-    setText("stat-refereed", refereed);
-    setText("stat-citations", totalCit.toLocaleString());
-    setText("stat-hindex",   hIndex);
+    setText("stat-total",       papers.length);
+    setText("stat-refereed",    cats.refereed);
+    setText("stat-preprint",    cats.preprint);
+    setText("stat-proceedings", cats.proceedings);
+    setText("stat-circular",    cats.circular);
+    setText("stat-citations",   totalCit.toLocaleString());
+    setText("stat-hindex",      hIndex);
   }
 
   function computeHIndex(papers) {
@@ -152,11 +168,10 @@
   }
 
   function onFilterChange() {
-    filters.yearFrom     = parseInt(el["pub-year-from"]?.value)     || 0;
-    filters.yearTo       = parseInt(el["pub-year-to"]?.value)       || 9999;
-    filters.journal      = el["pub-journal"]?.value                 || "";
-    filters.minCit       = parseInt(el["pub-min-citations"]?.value) || 0;
-    filters.refereedOnly = el["pub-refereed-only"]?.checked         || false;
+    filters.yearFrom = parseInt(el["pub-year-from"]?.value)     || 0;
+    filters.yearTo   = parseInt(el["pub-year-to"]?.value)       || 9999;
+    filters.journal  = el["pub-journal"]?.value                 || "";
+    filters.minCit   = parseInt(el["pub-min-citations"]?.value) || 0;
     currentPage = 1;
     applyAndRender();
   }
@@ -170,7 +185,6 @@
   function onReset() {
     if (el["pub-search"])        el["pub-search"].value = "";
     if (el["pub-min-citations"]) el["pub-min-citations"].value = 0;
-    if (el["pub-refereed-only"]) el["pub-refereed-only"].checked = false;
     if (el["pub-journal"])       el["pub-journal"].value = "";
     if (el["pub-sort"])          el["pub-sort"].value = "year";
 
@@ -180,9 +194,12 @@
     if (el["pub-year-from"]) el["pub-year-from"].value = minY;
     if (el["pub-year-to"])   el["pub-year-to"].value   = maxY;
 
+    filters.catStates = { refereed: 0, preprint: 0, proceedings: 0, circular: 0 };
+    document.querySelectorAll(".stat-filter").forEach(btn => { btn.dataset.state = "0"; });
+
     Object.assign(filters, {
       search: "", yearFrom: minY, yearTo: maxY,
-      journal: "", minCit: 0, refereedOnly: false, sortBy: "year",
+      journal: "", minCit: 0, sortBy: "year",
     });
     currentPage = 1;
     applyAndRender();
@@ -190,13 +207,20 @@
 
   /* ── Filter + sort ───────────────────────────────────────────────────────── */
   function applyFilters() {
-    const { search, yearFrom, yearTo, journal, minCit, refereedOnly } = filters;
+    const { search, yearFrom, yearTo, journal, minCit, catStates } = filters;
+    const hasOnly = Object.values(catStates).some(s => s === 2);
 
     filteredPapers = allPapers.filter(p => {
       if (p.year < yearFrom || p.year > yearTo)     return false;
       if (journal && p.journal !== journal)          return false;
       if ((p.citation_count || 0) < minCit)          return false;
-      if (refereedOnly && !p.refereed)               return false;
+      // Category filter
+      const cat = getCategory(p);
+      if (hasOnly) {
+        if ((catStates[cat] || 0) !== 2) return false;
+      } else {
+        if ((catStates[cat] || 0) === 1) return false;
+      }
       if (search) {
         const haystack = [
           p.title, ...(p.authors || []), p.journal, p.abstract || "",
@@ -318,6 +342,28 @@
       .replace(/"/g, "&quot;");
   }
 
+  /* ── Category classifier ────────────────────────────────────────────────── */
+  function getCategory(p) {
+    if (p.refereed) return "refereed";
+    const dt = (p.doctype || "").toLowerCase();
+    if (dt === "eprint") return "preprint";
+    const j = (p.journal || "").toLowerCase();
+    if (
+      dt === "circular" ||
+      j.includes("gcn") ||
+      j.includes("atel") ||
+      j.includes("telegram") ||
+      j.includes("astronomer")
+    ) return "circular";
+    if (
+      dt === "inproceedings" ||
+      dt === "inbook" ||
+      dt === "proceedings" ||
+      dt === "abstract"
+    ) return "proceedings";
+    return "other";
+  }
+
   function formatAuthors(authors) {
     if (!authors || !authors.length) return "";
     const list = (authors.length > MAX_AUTHORS ? authors.slice(0, MAX_AUTHORS) : authors).map(a =>
@@ -335,10 +381,16 @@
     const titleLink  = `<a href="${href}" target="_blank" rel="noopener">${esc(p.title)}</a>`;
 
     // Badges
-    const refBadge   = p.refereed
-      ? `<span class="badge badge-refereed">&#10003; Refereed</span>`
-      : `<span class="badge badge-preprint">Preprint</span>`;
-    const citBadge   = p.citation_count > 0
+    const cat = getCategory(p);
+    const catBadgeMap = {
+      refereed:   `<span class="badge badge-refereed">&#10003; Refereed</span>`,
+      preprint:   `<span class="badge badge-preprint">Preprint</span>`,
+      proceedings:`<span class="badge badge-proceedings">Proceedings</span>`,
+      circular:   `<span class="badge badge-circular">Circular</span>`,
+      other:      `<span class="badge badge-other">${esc(p.doctype || "Other")}</span>`,
+    };
+    const catBadge = catBadgeMap[cat] || catBadgeMap.other;
+    const citBadge = p.citation_count > 0
       ? `<span class="badge badge-citations">&#9733; ${p.citation_count}</span>`
       : "";
 
@@ -368,7 +420,7 @@
     return `<article class="pub-card">
   <div class="pub-card-top">
     <span class="pub-index">${idx}.</span>
-    <div class="pub-badges">${refBadge}${citBadge}</div>
+    <div class="pub-badges">${catBadge}${citBadge}</div>
   </div>
   <div class="pub-title">${titleLink}</div>
   <div class="pub-authors">${formatAuthors(p.authors)}</div>

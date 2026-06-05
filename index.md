@@ -6,7 +6,7 @@ title: Home
 <div class="hero">
   <div class="hero-inner">
     <h1 class="hero-name">Rubén Sánchez-Ramírez</h1>
-    <p class="hero-sub">Astrophysicist &nbsp;·&nbsp; Gamma-ray bursts &nbsp;·&nbsp; High-energy transients</p>
+    <p class="hero-sub">Gamma-ray bursts &nbsp;·&nbsp; High-energy transients &nbsp;·&nbsp; Absorption Spectroscopy</p>
     <div class="hero-links">
       <a class="hero-link" href="{{ '/publications/' | relative_url }}">
         &#128196; Publications

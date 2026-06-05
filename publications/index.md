@@ -15,16 +15,33 @@ title: Publications
     </p>
   </div>
 
-  <!-- Stats strip (filled by JS) -->
+  <!-- Stats strip — non-clickable cards + 4 clickable category filters -->
+  <!-- 1 click = exclude · 2 clicks = show only · 3 clicks = reset -->
   <div class="pub-stats">
     <div class="stat-card">
       <span class="stat-value" id="stat-total">—</span>
       <span class="stat-label">Publications</span>
     </div>
-    <div class="stat-card">
+    <button class="stat-card stat-filter" data-cat="refereed" data-state="0"
+            title="1 click: exclude · 2 clicks: show only · 3 clicks: reset">
       <span class="stat-value" id="stat-refereed">—</span>
       <span class="stat-label">Refereed</span>
-    </div>
+    </button>
+    <button class="stat-card stat-filter" data-cat="preprint" data-state="0"
+            title="1 click: exclude · 2 clicks: show only · 3 clicks: reset">
+      <span class="stat-value" id="stat-preprint">—</span>
+      <span class="stat-label">Preprints</span>
+    </button>
+    <button class="stat-card stat-filter" data-cat="proceedings" data-state="0"
+            title="1 click: exclude · 2 clicks: show only · 3 clicks: reset">
+      <span class="stat-value" id="stat-proceedings">—</span>
+      <span class="stat-label">Proceedings</span>
+    </button>
+    <button class="stat-card stat-filter" data-cat="circular" data-state="0"
+            title="1 click: exclude · 2 clicks: show only · 3 clicks: reset">
+      <span class="stat-value" id="stat-circular">—</span>
+      <span class="stat-label">Circulars</span>
+    </button>
     <div class="stat-card">
       <span class="stat-value" id="stat-citations">—</span>
       <span class="stat-label">Total citations</span>
@@ -74,11 +91,6 @@ title: Publications
           <option value="title">Title (A–Z)</option>
         </select>
       </div>
-
-      <label class="checkbox-wrap">
-        <input type="checkbox" id="pub-refereed-only">
-        Refereed only
-      </label>
 
     </div>
 
