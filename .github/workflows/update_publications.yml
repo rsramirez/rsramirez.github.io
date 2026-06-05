@@ -60,7 +60,9 @@ jobs:
                 exit 1
               fi
 
-              echo "Push race detected, retrying (attempt $attempt/3)..."
-              sleep $((attempt * 2))
+              if [ "$attempt" -lt 3 ]; then
+                echo "Push race detected, retrying (attempt $attempt/3)..."
+                sleep $((attempt * 2))
+              fi
             done
           fi
