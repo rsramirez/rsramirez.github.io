@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-05T10:36:00Z",
+  "updated": "2026-06-05T10:49:42Z",
   "total": 376,
   "journals": [
     "37th International Cosmic Ray Conference",
@@ -8409,36 +8409,6 @@
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.24978....1D"
     },
     {
-      "bibcode": "2019GCN.24092....1V",
-      "title": "LIGO/Virgo S190408an: MASTER OT J231043.63+470956.4 BOOTES-4 and 10.4m GTC follow-up observations.",
-      "authors": [
-        "Valeev, A. F.",
-        "Sokolov, I. V.",
-        "Sokolov, V. V.",
-        "Hu, Y.-D.",
-        "Li, X.-Y.",
-        "Castro-Tirado, A. J.",
-        "Carrasco, I.",
-        "Sanchez-Ramirez, R.",
-        "Caballero-Garcia, M. D.",
-        "Peseev, P."
-      ],
-      "year": 2019,
-      "pubdate": "2019-00-00",
-      "journal": "GRB Coordinates Network",
-      "bibstem": "GCN",
-      "volume": "24092",
-      "page": "1",
-      "doi": null,
-      "arxiv_id": null,
-      "abstract": "",
-      "citation_count": 1,
-      "read_count": 0,
-      "doctype": "newsletter",
-      "refereed": false,
-      "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.24092....1V"
-    },
-    {
       "bibcode": "2019GCN.24368....1S",
       "title": "LIGO/Virgo S190426c: Gaia19boq 0.6m BOOTES-5/JGT, 1.5m OSN and 10.4m GTC observations.",
       "authors": [
@@ -8510,6 +8480,36 @@
       "doctype": "newsletter",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.23739....1D"
+    },
+    {
+      "bibcode": "2019GCN.24092....1V",
+      "title": "LIGO/Virgo S190408an: MASTER OT J231043.63+470956.4 BOOTES-4 and 10.4m GTC follow-up observations.",
+      "authors": [
+        "Valeev, A. F.",
+        "Sokolov, I. V.",
+        "Sokolov, V. V.",
+        "Hu, Y.-D.",
+        "Li, X.-Y.",
+        "Castro-Tirado, A. J.",
+        "Carrasco, I.",
+        "Sanchez-Ramirez, R.",
+        "Caballero-Garcia, M. D.",
+        "Peseev, P."
+      ],
+      "year": 2019,
+      "pubdate": "2019-00-00",
+      "journal": "GRB Coordinates Network",
+      "bibstem": "GCN",
+      "volume": "24092",
+      "page": "1",
+      "doi": null,
+      "arxiv_id": null,
+      "abstract": "",
+      "citation_count": 1,
+      "read_count": 0,
+      "doctype": "newsletter",
+      "refereed": false,
+      "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.24092....1V"
     },
     {
       "bibcode": "2019GCN.24791....1S",
@@ -20227,6 +20227,31 @@
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14881....1T"
     },
     {
+      "bibcode": "2013GCN.14829....1T",
+      "title": "GRB130608A: BOOTES-2/TELMA upper limits.",
+      "authors": [
+        "Tello, J. C.",
+        "Jelinek, M.",
+        "Gorosabel, J.",
+        "Castro-Tirado, A. J.",
+        "Sanchez-Ramirez, R."
+      ],
+      "year": 2013,
+      "pubdate": "2013-00-00",
+      "journal": "GRB Coordinates Network",
+      "bibstem": "GCN",
+      "volume": "14829",
+      "page": "1",
+      "doi": null,
+      "arxiv_id": null,
+      "abstract": "",
+      "citation_count": 0,
+      "read_count": 0,
+      "doctype": "newsletter",
+      "refereed": false,
+      "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14829....1T"
+    },
+    {
       "bibcode": "2013GCN.14609....1T",
       "title": "GRB130508A: BOOTES-3 optical limit.",
       "authors": [
@@ -20253,40 +20278,6 @@
       "doctype": "newsletter",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14609....1T"
-    },
-    {
-      "bibcode": "2013ghth.confE...6D",
-      "title": "Study of the Host Galaxies of GRBs through the Distribution of Equivalent Widths in GRB Afterglow Spectra",
-      "authors": [
-        "De Ugarte Postigo, A.",
-        "Fynbo, J. P. U.",
-        "Thöne, C. C.",
-        "Christensen, L.",
-        "Gorosabel, J.",
-        "Milvang-Jensen, B.",
-        "Schulze, S.",
-        "Jakobsson, P.",
-        "Wiersema, K.",
-        "Sánchez-Ramírez, R.",
-        "Leloudas, G.",
-        "Zafar, T.",
-        "Malesani, D.",
-        "Hjorth, J."
-      ],
-      "year": 2013,
-      "pubdate": "2013-01-00",
-      "journal": "GRBs and their Hosts as Tracers of the High Redshift Universe",
-      "bibstem": "ghth",
-      "volume": "",
-      "page": "6",
-      "doi": null,
-      "arxiv_id": null,
-      "abstract": "",
-      "citation_count": 0,
-      "read_count": 0,
-      "doctype": "inproceedings",
-      "refereed": false,
-      "ads_url": "https://ui.adsabs.harvard.edu/abs/2013ghth.confE...6D"
     },
     {
       "bibcode": "2013GCN.14564....1G",
@@ -20369,6 +20360,40 @@
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14302....1D"
     },
     {
+      "bibcode": "2013ghth.confE...6D",
+      "title": "Study of the Host Galaxies of GRBs through the Distribution of Equivalent Widths in GRB Afterglow Spectra",
+      "authors": [
+        "De Ugarte Postigo, A.",
+        "Fynbo, J. P. U.",
+        "Thöne, C. C.",
+        "Christensen, L.",
+        "Gorosabel, J.",
+        "Milvang-Jensen, B.",
+        "Schulze, S.",
+        "Jakobsson, P.",
+        "Wiersema, K.",
+        "Sánchez-Ramírez, R.",
+        "Leloudas, G.",
+        "Zafar, T.",
+        "Malesani, D.",
+        "Hjorth, J."
+      ],
+      "year": 2013,
+      "pubdate": "2013-01-00",
+      "journal": "GRBs and their Hosts as Tracers of the High Redshift Universe",
+      "bibstem": "ghth",
+      "volume": "",
+      "page": "6",
+      "doi": null,
+      "arxiv_id": null,
+      "abstract": "",
+      "citation_count": 0,
+      "read_count": 0,
+      "doctype": "inproceedings",
+      "refereed": false,
+      "ads_url": "https://ui.adsabs.harvard.edu/abs/2013ghth.confE...6D"
+    },
+    {
       "bibcode": "2013ghth.confE...5G",
       "title": "The Role of the 10.4M Gran Telescope De Canarias (GTC) In The GRB Field",
       "authors": [
@@ -20424,31 +20449,6 @@
       "doctype": "newsletter",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14312....1T"
-    },
-    {
-      "bibcode": "2013GCN.14829....1T",
-      "title": "GRB130608A: BOOTES-2/TELMA upper limits.",
-      "authors": [
-        "Tello, J. C.",
-        "Jelinek, M.",
-        "Gorosabel, J.",
-        "Castro-Tirado, A. J.",
-        "Sanchez-Ramirez, R."
-      ],
-      "year": 2013,
-      "pubdate": "2013-00-00",
-      "journal": "GRB Coordinates Network",
-      "bibstem": "GCN",
-      "volume": "14829",
-      "page": "1",
-      "doi": null,
-      "arxiv_id": null,
-      "abstract": "",
-      "citation_count": 0,
-      "read_count": 0,
-      "doctype": "newsletter",
-      "refereed": false,
-      "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14829....1T"
     },
     {
       "bibcode": "2012A&A...548A..11D",
@@ -21346,31 +21346,6 @@
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13987....1G"
     },
     {
-      "bibcode": "2012GCN.12837....1S",
-      "title": "GRB 120116A: IAC80 i-band observations.",
-      "authors": [
-        "Sanchez-Ramirez, R.",
-        "Jimenez Mejias, D.",
-        "Tello, J. C.",
-        "de Ugarte Postigo, A.",
-        "Gorosabel, J."
-      ],
-      "year": 2012,
-      "pubdate": "2012-00-00",
-      "journal": "GRB Coordinates Network",
-      "bibstem": "GCN",
-      "volume": "12837",
-      "page": "1",
-      "doi": null,
-      "arxiv_id": null,
-      "abstract": "",
-      "citation_count": 0,
-      "read_count": 0,
-      "doctype": "newsletter",
-      "refereed": false,
-      "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.12837....1S"
-    },
-    {
       "bibcode": "2012GCN.13505....1A",
       "title": "GRB 120722A: 1.5m OSN i-band observations.",
       "authors": [
@@ -21452,6 +21427,31 @@
       "doctype": "newsletter",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13293....1D"
+    },
+    {
+      "bibcode": "2012GCN.12837....1S",
+      "title": "GRB 120116A: IAC80 i-band observations.",
+      "authors": [
+        "Sanchez-Ramirez, R.",
+        "Jimenez Mejias, D.",
+        "Tello, J. C.",
+        "de Ugarte Postigo, A.",
+        "Gorosabel, J."
+      ],
+      "year": 2012,
+      "pubdate": "2012-00-00",
+      "journal": "GRB Coordinates Network",
+      "bibstem": "GCN",
+      "volume": "12837",
+      "page": "1",
+      "doi": null,
+      "arxiv_id": null,
+      "abstract": "",
+      "citation_count": 0,
+      "read_count": 0,
+      "doctype": "newsletter",
+      "refereed": false,
+      "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.12837....1S"
     },
     {
       "bibcode": "2012GCN.12976....1G",
