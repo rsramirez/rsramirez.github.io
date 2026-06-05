@@ -358,32 +358,33 @@
 
   /* ── Category classifier ────────────────────────────────────────────────── */
   function getCategory(p) {
-    // Use `kind` written by fetch_publications.py when available
-    if (p.kind) {
-      if (p.kind === "circular")    return "circular";
-      if (p.kind === "preprint")    return "preprint";
-      if (p.kind === "proceedings") return "proceedings";
-      // kind === "article" | "thesis" | unknown
-      return p.refereed ? "refereed" : "other";
+    // Circulars and preprints are never peer-reviewed — kind wins unconditionally
+    if (p.kind === "circular") return "circular";
+    if (p.kind === "preprint") return "preprint";
+    // Fallback path for JSON without `kind` (pre-workflow data)
+    if (!p.kind) {
+      const dt = (p.doctype || "").toLowerCase();
+      if (dt === "eprint") return "preprint";
+      const j = (p.journal || "").toLowerCase();
+      if (
+        dt === "circular" || dt === "newsletter" ||
+        j.includes("gcn") || j.includes("atel") ||
+        j.includes("telegram") || j.includes("astronomer")
+      ) return "circular";
     }
-    // Fallback for JSON without `kind` (pre-workflow data)
+    // Refereed flag beats everything else (covers refereed proceedings, etc.)
     if (p.refereed) return "refereed";
-    const dt = (p.doctype || "").toLowerCase();
-    if (dt === "eprint") return "preprint";
-    const j = (p.journal || "").toLowerCase();
-    if (
-      dt === "circular" || dt === "newsletter" ||
-      j.includes("gcn") || j.includes("atel") ||
-      j.includes("telegram") || j.includes("astronomer")
-    ) return "circular";
-    if (dt === "inproceedings" || dt === "inbook" || dt === "proceedings" || dt === "abstract")
-      return "proceedings";
+    if (p.kind === "proceedings") return "proceedings";
+    if (!p.kind) {
+      const dt = (p.doctype || "").toLowerCase();
+      if (dt === "inproceedings" || dt === "inbook" || dt === "proceedings" || dt === "abstract")
+        return "proceedings";
+    }
     return "other";
   }
 
   function isQ1(p) {
-    // Use field from JSON when present; fall back to bibstem lookup
-    return p.q1 ?? Q1_BIBSTEMS.has(p.bibstem);
+    return p.q1 || Q1_BIBSTEMS.has(p.bibstem);
   }
 
   function formatAuthors(authors) {
