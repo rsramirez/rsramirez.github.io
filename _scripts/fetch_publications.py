@@ -45,7 +45,13 @@ RESEARCH_START_YEAR  = 2010
 EXCLUDED_FIRST_NAMES = ["roberto"]
 
 # Bibcodes to always exclude regardless of author matching
-EXCLUDE_BIBCODES: set[str] = set()
+EXCLUDE_BIBCODES: set[str] = {
+    "2013CaMQ...52..166S",  # different R. Sánchez-Ramírez (metallurgy)
+}
+
+# Bibstems that represent circulars/telegrams regardless of ADS doctype
+# (GCN uses doctype "newsletter"; ATel/CBET use "circular")
+CIRCULAR_BIBSTEMS: set[str] = {"GCN", "ATel", "CBET", "IAUC", "GCNr", "GCNi"}
 
 # ADS fields to retrieve
 ADS_FIELDS = [
@@ -257,6 +263,19 @@ def _arxiv_id(paper: dict) -> str | None:
     return None
 
 
+def _kind(bibstem: str, doctype: str) -> str:
+    """Human-readable record type for use in the frontend."""
+    if bibstem in CIRCULAR_BIBSTEMS or doctype in ("circular", "newsletter"):
+        return "circular"
+    if doctype == "eprint":
+        return "preprint"
+    if doctype == "phdthesis":
+        return "thesis"
+    if doctype == "inproceedings":
+        return "proceedings"
+    return "article"
+
+
 def normalise(paper: dict) -> dict:
     props    = paper.get("property") or []
     bibstem  = ((paper.get("bibstem") or [""])[0])
@@ -265,6 +284,7 @@ def normalise(paper: dict) -> dict:
     doi      = _first_doi(paper)
     arxiv_id = _arxiv_id(paper)
     bibcode  = paper.get("bibcode", "")
+    doctype  = paper.get("doctype", "article")
 
     return {
         "bibcode":        bibcode,
@@ -281,7 +301,8 @@ def normalise(paper: dict) -> dict:
         "abstract":       paper.get("abstract", ""),
         "citation_count": int(paper.get("citation_count") or 0),
         "read_count":     int(paper.get("read_count")     or 0),
-        "doctype":        paper.get("doctype", "article"),
+        "doctype":        doctype,
+        "kind":           _kind(bibstem, doctype),
         "refereed":       "REFEREED" in props,
         "ads_url":        f"https://ui.adsabs.harvard.edu/abs/{bibcode}",
     }
