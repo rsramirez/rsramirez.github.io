@@ -170,7 +170,7 @@ def search_ads(token: str, orcid: str) -> list[dict]:
     explicitly claimed — so a pure orcid:{id} query misses GCNs, ATels, and
     many arXiv preprints even when ORCID is available.
 
-    We therefore always issue three name-based queries:
+    We therefore always issue five name-based queries:
       1.  author:"Sánchez-Ramírez, R"        – standard papers / proceedings
       2.  author:"Sanchez-Ramirez, R"        – same without accent (redundant
                                                on accent-insensitive ADS, but
@@ -178,8 +178,13 @@ def search_ads(token: str, orcid: str) -> list[dict]:
       3.  author:"Sanchez-Ramirez"            – surname only: catches GCNs and
                                                ATels that use first-name-first
                                                ordering or only an initial.
+      4.  author:"Sanchez Ramirez, R"        – space-separated variant: some
+                                               conference proceedings and older
+                                               ADS records drop the hyphen.
+      5.  author:"Sanchez Ramirez"            – space + surname only: widest net
+                                               for non-standard records.
 
-    When ORCID is available we also run a fourth orcid:{id} query to pick up
+    When ORCID is available we also run a sixth orcid:{id} query to pick up
     any papers that might not match by name alone.
 
     All results are merged and deduplicated by bibcode before disambiguation.
@@ -198,7 +203,7 @@ def search_ads(token: str, orcid: str) -> list[dict]:
         all_docs.extend(new)
         print(f"    → {len(new)} new records (total so far: {len(all_docs)})")
 
-    # Name-based: three queries to maximise recall (always run, regardless of ORCID,
+    # Name-based: five queries to maximise recall (always run, regardless of ORCID,
     # because GCNs/ATels/preprints are often not ORCID-linked in ADS)
     queries = [
         (f'author:"{AUTHOR_NAME}" year:{RESEARCH_START_YEAR}-{year_now}',
@@ -206,7 +211,11 @@ def search_ads(token: str, orcid: str) -> list[dict]:
         (f'author:"Sanchez-Ramirez, R" year:{RESEARCH_START_YEAR}-{year_now}',
          "standard name without accent"),
         (f'author:"Sanchez-Ramirez" year:{RESEARCH_START_YEAR}-{year_now}',
-         "surname only (GCN/ATel/circular style)"),
+         "surname only, hyphenated"),
+        (f'author:"Sanchez Ramirez, R" year:{RESEARCH_START_YEAR}-{year_now}',
+         "space-separated name with initial"),
+        (f'author:"Sanchez Ramirez" year:{RESEARCH_START_YEAR}-{year_now}',
+         "space-separated surname only"),
     ]
 
     for q, label in queries:
@@ -241,8 +250,8 @@ def is_target_author(paper: dict, orcid: str) -> bool:
 
     for i, author in enumerate(authors):
         name_lc = author.lower()
-        # Must contain the surname fragment (accent-agnostic)
-        if "nchez-ram" not in name_lc:
+        # Must contain the surname fragment — accept both hyphenated and space forms
+        if "nchez-ram" not in name_lc and "nchez ram" not in name_lc:
             continue
 
         orcid_at = (

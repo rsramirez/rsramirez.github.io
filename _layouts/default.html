@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html-root">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,9 @@
     <div class="header-inner">
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active" aria-current="page"{% endif %}>Home</a>
-        <a href="{{ '/publications/' | relative_url }}"{% if page.url contains '/publications' %} class="active" aria-current="page"{% endif %}>Publications</a>
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active" aria-current="page"{% endif %} data-i18n="nav-home">Home</a>
+        <a href="{{ '/publications/' | relative_url }}"{% if page.url contains '/publications' %} class="active" aria-current="page"{% endif %} data-i18n="nav-pubs">Publications</a>
+        <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">ES</button>
       </nav>
     </div>
   </header>
@@ -30,11 +31,12 @@
       <p>
         &copy; {{ 'now' | date: '%Y' }} {{ site.title }}
         &nbsp;&middot;&nbsp;
-        Data from <a href="https://ui.adsabs.harvard.edu" target="_blank" rel="noopener">NASA ADS</a>
+        <span data-i18n="footer-data">Data from</span> <a href="https://ui.adsabs.harvard.edu" target="_blank" rel="noopener">NASA ADS</a>
         &nbsp;&middot;&nbsp;
-        Built with <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+        <span data-i18n="footer-built">Built with</span> <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
       </p>
     </div>
   </footer>
+  <script src="{{ '/assets/js/i18n.js' | relative_url }}"></script>
 </body>
 </html>

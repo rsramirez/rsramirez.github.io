@@ -75,6 +75,20 @@ a:hover { text-decoration: underline; }
 }
 .site-nav a:hover { color: #fff; background: rgba(255,255,255,.1); text-decoration: none; }
 .site-nav a.active { color: #fff; background: rgba(255,255,255,.15); }
+.lang-toggle {
+  color: rgba(255,255,255,.7);
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .3rem .7rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,.3);
+  background: transparent;
+  cursor: pointer;
+  transition: color .15s, background .15s, border-color .15s;
+  letter-spacing: .04em;
+  margin-left: .4rem;
+}
+.lang-toggle:hover { color: #fff; background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.5); }
 
 /* ─── Main / Footer ──────────────────────────────────────────────────────── */
 .site-main { flex: 1; }

@@ -4,6 +4,9 @@
 (function () {
   "use strict";
 
+  /* ── i18n helper ────────────────────────────────────────────────────────── */
+  function t(key) { return window.i18n?.t(key) ?? key; }
+
   /* ── Constants ───────────────────────────────────────────────────────────── */
   const PAGE_SIZE    = 20;
   const DEBOUNCE_MS  = 200;
@@ -58,21 +61,19 @@
       .then(data => bootstrap(data))
       .catch(() => {
         if (el["pub-list"]) {
-          el["pub-list"].innerHTML = stateBox(
-            "Publications not yet loaded",
-            'The data will appear after the first <a href="https://github.com/rsramirez/rsramirez.github.io/actions" target="_blank" rel="noopener">GitHub Actions run</a>. Make sure the <code>ADS_DEV_KEY</code> secret is configured.'
-          );
+          el["pub-list"].innerHTML = stateBox(t("not-loaded-title"), t("not-loaded-msg"));
         }
       });
+
+    document.addEventListener("langchange", () => {
+      if (allPapers.length) applyAndRender();
+    });
   }
 
   function bootstrap(data) {
     if (!data || !Array.isArray(data.publications) || data.publications.length === 0) {
       if (el["pub-list"]) {
-        el["pub-list"].innerHTML = stateBox(
-          "Publications not yet loaded",
-          'The data will appear after the first <a href="https://github.com/rsramirez/rsramirez.github.io/actions" target="_blank" rel="noopener">GitHub Actions run</a>. Make sure the <code>ADS_DEV_KEY</code> secret is configured.'
-        );
+        el["pub-list"].innerHTML = stateBox(t("not-loaded-title"), t("not-loaded-msg"));
       }
       return;
     }
@@ -270,15 +271,15 @@
     const from = n ? (currentPage - 1) * PAGE_SIZE + 1 : 0;
     const to   = Math.min(currentPage * PAGE_SIZE, n);
     el["pub-summary"].textContent =
-      n === 0 ? "No publications match the current filters." :
-      n === 1 ? "Showing 1 publication." :
-      `Showing ${from}–${to} of ${n} publications.`;
+      n === 0 ? t("summary-none") :
+      n === 1 ? t("summary-one") :
+      t("summary-many").replace("{from}", from).replace("{to}", to).replace("{n}", n);
   }
 
   function renderList() {
     if (!el["pub-list"]) return;
     if (filteredPapers.length === 0) {
-      el["pub-list"].innerHTML = stateBox("No results", "Try adjusting or resetting the filters.");
+      el["pub-list"].innerHTML = stateBox(t("no-results-title"), t("no-results-msg"));
       return;
     }
     const start = (currentPage - 1) * PAGE_SIZE;
@@ -292,7 +293,7 @@
         const box   = card.querySelector(".pub-abstract-box");
         const open  = box.classList.toggle("is-open");
         btn.classList.toggle("is-open", open);
-        btn.querySelector(".abs-label").textContent = open ? "Hide abstract" : "Abstract";
+        btn.querySelector(".abs-label").textContent = open ? t("abstract-hide") : t("abstract-show");
       });
     });
   }
@@ -406,11 +407,11 @@
     // Badges
     const cat = getCategory(p);
     const catBadgeMap = {
-      refereed:   `<span class="badge badge-refereed">&#10003; Refereed</span>`,
-      preprint:   `<span class="badge badge-preprint">Preprint</span>`,
-      proceedings:`<span class="badge badge-proceedings">Proceedings</span>`,
-      circular:   `<span class="badge badge-circular">Circular</span>`,
-      other:      `<span class="badge badge-other">${esc(p.doctype || "Other")}</span>`,
+      refereed:   `<span class="badge badge-refereed">${t("badge-refereed")}</span>`,
+      preprint:   `<span class="badge badge-preprint">${t("badge-preprint")}</span>`,
+      proceedings:`<span class="badge badge-proceedings">${t("badge-proceedings")}</span>`,
+      circular:   `<span class="badge badge-circular">${t("badge-circular")}</span>`,
+      other:      `<span class="badge badge-other">${esc(p.doctype || t("badge-other"))}</span>`,
     };
     const catBadge = catBadgeMap[cat] || catBadgeMap.other;
     const citBadge = p.citation_count > 0
@@ -433,7 +434,7 @@
     const absBtn     = p.abstract
       ? `<button class="btn-abstract" aria-expanded="false" title="Toggle abstract">
            <span class="arrow" aria-hidden="true">&#9658;</span>
-           <span class="abs-label">Abstract</span>
+           <span class="abs-label">${t("abstract-show")}</span>
          </button>`
       : "";
     const absBox     = p.abstract
