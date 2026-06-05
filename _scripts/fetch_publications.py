@@ -53,6 +53,7 @@ EXCLUDE_BIBCODES: set[str] = {
 # (e.g. conference contributions stored with unusual author-name formats in ADS)
 INCLUDE_BIBCODES: set[str] = {
     "2025rfa..confE..57S",
+    "2019MNRAS.489.2104T",  # Troja+Castro-Tirado+RSR; missed by name queries
 }
 
 # Bibstems that represent circulars/telegrams regardless of ADS doctype
