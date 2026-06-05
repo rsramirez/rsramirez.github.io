@@ -49,6 +49,12 @@ EXCLUDE_BIBCODES: set[str] = {
     "2013CaMQ...52..166S",  # different R. Sánchez-Ramírez (metallurgy)
 }
 
+# Bibcodes to always include — for papers missed by the automatic queries
+# (e.g. conference contributions stored with unusual author-name formats in ADS)
+INCLUDE_BIBCODES: set[str] = {
+    "2025rfa..confE..57S",
+}
+
 # Bibstems that represent circulars/telegrams regardless of ADS doctype
 # (GCN uses doctype "newsletter"; ATel/CBET use "circular")
 CIRCULAR_BIBSTEMS: set[str] = {"GCN", "ATel", "CBET", "IAUC", "GCNr", "GCNi"}
@@ -105,6 +111,21 @@ def load_ads_token() -> str:
 
 
 # ── ADS search (handles pagination) ──────────────────────────────────────────
+
+def _fetch_by_bibcodes(token: str, bibcodes: set[str]) -> list[dict]:
+    """Fetch specific records by bibcode (used for INCLUDE_BIBCODES overrides)."""
+    if not bibcodes:
+        return []
+    headers = {"Authorization": f"Bearer {token}"}
+    # ADS bibcode OR query: bibcode:(A OR B OR ...)
+    query = "bibcode:(" + " OR ".join(f'"{b}"' for b in bibcodes) + ")"
+    params = {"q": query, "fl": ",".join(ADS_FIELDS), "rows": len(bibcodes)}
+    resp = requests.get(
+        f"{ADS_BASE_URL}/search/query", headers=headers, params=params, timeout=30,
+    )
+    resp.raise_for_status()
+    return resp.json()["response"]["docs"]
+
 
 def _run_query(token: str, query: str) -> list[dict]:
     """Execute a single ADS query with automatic pagination; return all docs."""
@@ -351,6 +372,15 @@ def main() -> None:
     ]
     discarded = len(raw_papers) - len(kept)
     print(f"  Kept after disambiguation: {len(kept)} (discarded {discarded})")
+
+    # Fetch and merge manually included bibcodes (bypass disambiguation)
+    already = {p["bibcode"] for p in kept}
+    missing = INCLUDE_BIBCODES - already - EXCLUDE_BIBCODES
+    if missing:
+        print(f"  Fetching {len(missing)} manually included bibcode(s)…")
+        extras = _fetch_by_bibcodes(token, missing)
+        kept.extend(extras)
+        print(f"  Added: {[d.get('bibcode') for d in extras]}")
 
     # Normalise
     papers = [normalise(p) for p in kept]
