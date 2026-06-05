@@ -1,12 +1,11 @@
 {
-  "updated": "2026-06-05T10:51:05Z",
-  "total": 376,
+  "updated": "2026-06-05T10:53:16Z",
+  "total": 375,
   "journals": [
     "37th International Cosmic Ray Conference",
     "Advances in Astronomy",
     "Astronomical Society of India Conference Series",
     "Astronomy and Astrophysics",
-    "Canadian Metallurgical Quarterly",
     "Central Bureau Electronic Telegrams",
     "Death of Massive Stars: Supernovae and Gamma-Ray Bursts",
     "EAS Publications Series",
@@ -68,9 +67,10 @@
       "doi": "10.3847/2041-8213/ae2dea",
       "arxiv_id": "2510.18854",
       "abstract": "AT2025ulz is an optical/near-infrared transient discovered during follow-up of the candidate gravitational wave (GW) event S250818k. Its young age (≲1 day), rapid decline, and strong color evolution over the first 48 hr classify it as a potential kilonova candidate. In this work, we present the results of our observing campaign, carried out with the Gran Telescopio Canarias and the Hubble Space Telescope (HST). Although the early time evolution of AT2025ulz resembles some aspects of a kilonova, its rapid onset (∼3 hr after the GW trigger) and luminosity (a factor of ∼5 brighter than AT2017gfo in g band) are difficult to reproduce. Only a small subset of our kilonova models matches its multicolor light curve, and the inferred ejecta mass is uncomfortably large given the low chirp mass (≲0.87 M<SUB>⊙</SUB>) of the GW candidate. HST observations place the transient within a nearby (z = 0.08489) spiral galaxy with ongoing star formation and measure a color (F336W − F160W ≍ 1.4 mag) that is too blue to match with a kilonova. Our data support the classification of AT2025ulz as a supernova, initially undergoing a shock-cooling phase and later entering its photospheric phase and spectroscopically identified via its broad absorption features.",
-      "citation_count": 10,
+      "citation_count": 9,
       "read_count": 353,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026ApJ...996L..24Y"
     },
@@ -141,6 +141,7 @@
       "citation_count": 5,
       "read_count": 317,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026ApJ...997..246G"
     },
@@ -193,6 +194,7 @@
       "citation_count": 5,
       "read_count": 410,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...705A.233B"
     },
@@ -291,6 +293,7 @@
       "citation_count": 2,
       "read_count": 327,
       "doctype": "eprint",
+      "kind": "preprint",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260114137L"
     },
@@ -332,6 +335,7 @@
       "citation_count": 0,
       "read_count": 417,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026ApJS..284...36W"
     },
@@ -372,6 +376,7 @@
       "citation_count": 0,
       "read_count": 551,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...709A.222G"
     },
@@ -431,6 +436,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "eprint",
+      "kind": "preprint",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260604585K"
     },
@@ -467,6 +473,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026GCN.44442....1P"
     },
@@ -503,6 +510,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026GCN.44444....1W"
     },
@@ -557,6 +565,7 @@
       "citation_count": 0,
       "read_count": 453,
       "doctype": "eprint",
+      "kind": "preprint",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260523818Y"
     },
@@ -628,6 +637,7 @@
       "citation_count": 0,
       "read_count": 25,
       "doctype": "eprint",
+      "kind": "preprint",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260531132P"
     },
@@ -690,6 +700,7 @@
       "citation_count": 0,
       "read_count": 511,
       "doctype": "eprint",
+      "kind": "preprint",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260502796W"
     },
@@ -720,6 +731,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026GCN.44351....1G"
     },
@@ -752,6 +764,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026GCN.44366....1W"
     },
@@ -783,6 +796,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026GCN.43893....1G"
     },
@@ -816,6 +830,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026GCN.43903....1P"
     },
@@ -853,6 +868,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026GCN.44056....1P"
     },
@@ -888,6 +904,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026GCN.44015....1P"
     },
@@ -928,6 +945,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026GCN.44101....1P"
     },
@@ -959,6 +977,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026GCN.43604....1S"
     },
@@ -995,6 +1014,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2026GCN.43364....1P"
     },
@@ -1040,6 +1060,7 @@
       "citation_count": 20,
       "read_count": 313,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...703A..92G"
     },
@@ -1163,6 +1184,7 @@
       "citation_count": 10,
       "read_count": 551,
       "doctype": "eprint",
+      "kind": "preprint",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025arXiv251210239S"
     },
@@ -1260,6 +1282,7 @@
       "citation_count": 7,
       "read_count": 15,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1375L"
     },
@@ -1327,6 +1350,7 @@
       "citation_count": 4,
       "read_count": 11,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...695A.239B"
     },
@@ -1402,6 +1426,7 @@
       "citation_count": 4,
       "read_count": 319,
       "doctype": "eprint",
+      "kind": "preprint",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025arXiv250800142G"
     },
@@ -1435,6 +1460,7 @@
       "citation_count": 4,
       "read_count": 9,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025Galax..13...62W"
     },
@@ -1478,6 +1504,7 @@
       "citation_count": 2,
       "read_count": 276,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.538L.100C"
     },
@@ -1520,6 +1547,7 @@
       "citation_count": 1,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.38764....1H"
     },
@@ -1554,6 +1582,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42982....1P"
     },
@@ -1588,6 +1617,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.43268....1P"
     },
@@ -1624,6 +1654,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.43022....1P"
     },
@@ -1657,6 +1688,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42539....1G"
     },
@@ -1700,6 +1732,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42899....1G"
     },
@@ -1733,6 +1766,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42900....1S"
     },
@@ -1771,6 +1805,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42363....1H"
     },
@@ -1806,6 +1841,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42086....1S"
     },
@@ -1841,6 +1877,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42285....1G"
     },
@@ -1876,6 +1913,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42323....1P"
     },
@@ -1909,6 +1947,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42225....1P"
     },
@@ -1944,6 +1983,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42314....1P"
     },
@@ -1979,6 +2019,7 @@
       "citation_count": 0,
       "read_count": 2,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42053....1S"
     },
@@ -2015,6 +2056,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42378....1P"
     },
@@ -2048,6 +2090,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42066....1P"
     },
@@ -2078,6 +2121,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.42174....1H"
     },
@@ -2114,6 +2158,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.41997....1C"
     },
@@ -2148,6 +2193,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.41928....1S"
     },
@@ -2181,6 +2227,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.41603....1P"
     },
@@ -2214,6 +2261,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.41559....1G"
     },
@@ -2248,6 +2296,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.41513....1F"
     },
@@ -2286,6 +2335,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.41381....1C"
     },
@@ -2319,6 +2369,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.41159....1P"
     },
@@ -2360,6 +2411,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.41192....1P"
     },
@@ -2396,6 +2448,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.40957....1P"
     },
@@ -2430,6 +2483,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.41047....1P"
     },
@@ -2461,6 +2515,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.40929....1P"
     },
@@ -2502,6 +2557,7 @@
       "citation_count": 0,
       "read_count": 2,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.40647....1P"
     },
@@ -2542,6 +2598,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.40650....1P"
     },
@@ -2581,6 +2638,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.40741....1P"
     },
@@ -2615,6 +2673,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.40549....1P"
     },
@@ -2651,6 +2710,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.40430....1P"
     },
@@ -2685,6 +2745,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.40569....1P"
     },
@@ -2718,6 +2779,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.40591....1P"
     },
@@ -2752,6 +2814,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.40259....1P"
     },
@@ -2785,6 +2848,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.40216....1G"
     },
@@ -2825,6 +2889,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.40053....1P"
     },
@@ -2859,6 +2924,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.39949....1P"
     },
@@ -2894,6 +2960,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.39805....1P"
     },
@@ -2924,6 +2991,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.39983....1C"
     },
@@ -2959,6 +3027,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.39247....1C"
     },
@@ -2993,6 +3062,7 @@
       "citation_count": 0,
       "read_count": 2,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.39343....1S"
     },
@@ -3033,6 +3103,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2025GCN.39439....1W"
     },
@@ -3129,6 +3200,7 @@
       "citation_count": 34,
       "read_count": 539,
       "doctype": "eprint",
+      "kind": "preprint",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024arXiv240416350L"
     },
@@ -3218,6 +3290,7 @@
       "citation_count": 15,
       "read_count": 247,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024ApJ...976L..20S"
     },
@@ -3287,6 +3360,7 @@
       "citation_count": 10,
       "read_count": 3,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...692A...3S"
     },
@@ -3338,6 +3412,7 @@
       "citation_count": 10,
       "read_count": 191,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...683A..55C"
     },
@@ -3366,6 +3441,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36599....1H"
     },
@@ -3400,6 +3476,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36563....1P"
     },
@@ -3441,6 +3518,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.38466....1X"
     },
@@ -3478,6 +3556,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.38509....1H"
     },
@@ -3512,6 +3591,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.38499....1P"
     },
@@ -3549,6 +3629,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.38427....1P"
     },
@@ -3585,6 +3666,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.38047....1P"
     },
@@ -3622,6 +3704,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.38106....1H"
     },
@@ -3652,6 +3735,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.38371....1H"
     },
@@ -3689,6 +3773,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.38141....1P"
     },
@@ -3758,6 +3843,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024yCat..36920003S"
     },
@@ -3785,6 +3871,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.37666....1S"
     },
@@ -3822,6 +3909,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.37828....1F"
     },
@@ -3856,6 +3944,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.37664....1P"
     },
@@ -3891,6 +3980,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.37199....1P"
     },
@@ -3926,6 +4016,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.37061....1P"
     },
@@ -3959,6 +4050,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36987....1G"
     },
@@ -3989,6 +4081,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36893....1G"
     },
@@ -4027,6 +4120,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36869....1P"
     },
@@ -4062,6 +4156,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36822....1F"
     },
@@ -4096,6 +4191,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36701....1W"
     },
@@ -4132,6 +4228,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36767....1P"
     },
@@ -4166,6 +4263,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36693....1P"
     },
@@ -4210,6 +4308,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36412....1P"
     },
@@ -4246,6 +4345,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36320....1X"
     },
@@ -4280,6 +4380,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36327....1P"
     },
@@ -4313,6 +4414,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36056....1P"
     },
@@ -4346,6 +4448,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.36216....1F"
     },
@@ -4383,6 +4486,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.35696....1F"
     },
@@ -4417,6 +4521,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.35686....1F"
     },
@@ -4450,6 +4555,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.35465....1H"
     },
@@ -4485,6 +4591,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2024GCN.35611....1H"
     },
@@ -4527,6 +4634,7 @@
       "citation_count": 27,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023ATel16208....1C"
     },
@@ -4651,6 +4759,7 @@
       "citation_count": 19,
       "read_count": 457,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...675A.201A"
     },
@@ -4702,6 +4811,7 @@
       "citation_count": 17,
       "read_count": 267,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023MNRAS.519.3201C"
     },
@@ -4731,6 +4841,7 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023NatCo..14.7810P"
     },
@@ -4765,6 +4876,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.35381....1H"
     },
@@ -4802,6 +4914,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.35363....1H"
     },
@@ -4835,6 +4948,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.35339....1H"
     },
@@ -4866,6 +4980,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.35398....1H"
     },
@@ -4899,6 +5014,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.35433....1C"
     },
@@ -4932,6 +5048,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.35239....1H"
     },
@@ -4983,6 +5100,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023yCat..36830055C"
     },
@@ -5014,6 +5132,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.34789....1S"
     },
@@ -5045,6 +5164,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023yCat..75024009B"
     },
@@ -5078,6 +5198,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.34673....1F"
     },
@@ -5111,6 +5232,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.34320....1F"
     },
@@ -5143,6 +5265,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.34441....1F"
     },
@@ -5177,6 +5300,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.34347....1H"
     },
@@ -5210,6 +5334,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.34291....1H"
     },
@@ -5242,6 +5367,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.33930....1H"
     },
@@ -5270,6 +5396,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023ATel15992....1P"
     },
@@ -5302,6 +5429,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.33695....1H"
     },
@@ -5331,6 +5459,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.33557....1H"
     },
@@ -5363,6 +5492,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.33663....1H"
     },
@@ -5391,6 +5521,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.33387....1H"
     },
@@ -5423,6 +5554,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2023GCN.33274....1H"
     },
@@ -5456,6 +5588,7 @@
       "citation_count": 78,
       "read_count": 209,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.515.4890O"
     },
@@ -5526,6 +5659,7 @@
       "citation_count": 34,
       "read_count": 213,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.511.1694G"
     },
@@ -5557,6 +5691,7 @@
       "citation_count": 22,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32686....1C"
     },
@@ -5590,6 +5725,7 @@
       "citation_count": 5,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32644....1H"
     },
@@ -5618,6 +5754,7 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.31423....1C"
     },
@@ -5741,6 +5878,7 @@
       "citation_count": 2,
       "read_count": 2,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022icrc.confE.955D"
     },
@@ -5772,6 +5910,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32251....1H"
     },
@@ -5799,6 +5938,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.31388....1C"
     },
@@ -5836,6 +5976,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.33086....1H"
     },
@@ -5866,6 +6007,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022yCat..74884356B"
     },
@@ -5897,6 +6039,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32869....1H"
     },
@@ -5933,6 +6076,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32878....1H"
     },
@@ -5964,6 +6108,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32606....1H"
     },
@@ -5996,6 +6141,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32408....1H"
     },
@@ -6119,6 +6265,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022yCat..19050145K"
     },
@@ -6144,6 +6291,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32386....1S"
     },
@@ -6169,6 +6317,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32387....1S"
     },
@@ -6200,6 +6349,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32349....1H"
     },
@@ -6231,6 +6381,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32311....1H"
     },
@@ -6262,6 +6413,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32219....1H"
     },
@@ -6290,6 +6442,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.31980....1H"
     },
@@ -6322,6 +6475,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32027....1H"
     },
@@ -6354,6 +6508,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32008....1H"
     },
@@ -6388,6 +6543,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.32107....1H"
     },
@@ -6420,6 +6576,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.31990....1H"
     },
@@ -6448,6 +6605,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022ATel15374....1P"
     },
@@ -6483,6 +6641,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.31901....1H"
     },
@@ -6514,6 +6673,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.31900....1H"
     },
@@ -6541,6 +6701,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.31841....1H"
     },
@@ -6572,6 +6733,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.31859....1H"
     },
@@ -6603,6 +6765,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.31669....1H"
     },
@@ -6634,6 +6797,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.31613....1H"
     },
@@ -6661,6 +6825,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.31581....1H"
     },
@@ -6694,6 +6859,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2022GCN.31573....1C"
     },
@@ -6763,6 +6929,7 @@
       "citation_count": 112,
       "read_count": 232,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021NatAs...5...46A"
     },
@@ -6801,6 +6968,7 @@
       "citation_count": 45,
       "read_count": 182,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021A&A...646A..50H"
     },
@@ -6862,6 +7030,7 @@
       "citation_count": 39,
       "read_count": 6,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021Natur.600..621C"
     },
@@ -6923,6 +7092,7 @@
       "citation_count": 38,
       "read_count": 208,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.4086G"
     },
@@ -6954,6 +7124,7 @@
       "citation_count": 17,
       "read_count": 189,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.502.4009B"
     },
@@ -7006,6 +7177,7 @@
       "citation_count": 4,
       "read_count": 0,
       "doctype": "erratum",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.501.2821T"
     },
@@ -7038,6 +7210,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021GCN.31318....1H"
     },
@@ -7075,6 +7248,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021GCN.31295....1H"
     },
@@ -7113,6 +7287,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021GCN.31279....1H"
     },
@@ -7142,6 +7317,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021GCN.30909....1H"
     },
@@ -7174,6 +7350,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021ATel14960....1P"
     },
@@ -7205,6 +7382,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021GCN.30844....1H"
     },
@@ -7242,6 +7420,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021RMxAC..53...83V"
     },
@@ -7273,6 +7452,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2021GCN.30823....1H"
     },
@@ -7396,6 +7576,7 @@
       "citation_count": 112,
       "read_count": 288,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2020ApJ...905..145K"
     },
@@ -7448,6 +7629,7 @@
       "citation_count": 49,
       "read_count": 263,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.499.3868T"
     },
@@ -7499,6 +7681,7 @@
       "citation_count": 22,
       "read_count": 215,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2020A&A...633A..68D"
     },
@@ -7537,6 +7720,7 @@
       "citation_count": 0,
       "read_count": 1,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2020yCat..36460050H"
     },
@@ -7864,6 +8048,7 @@
       "citation_count": 215,
       "read_count": 250,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019Natur.575..459M"
     },
@@ -7926,6 +8111,7 @@
       "citation_count": 141,
       "read_count": 260,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019Natur.565..324I"
     },
@@ -8002,6 +8188,7 @@
       "citation_count": 100,
       "read_count": 225,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019A&A...623A..92S"
     },
@@ -8065,6 +8252,7 @@
       "citation_count": 82,
       "read_count": 243,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.483.5380T"
     },
@@ -8159,6 +8347,7 @@
       "citation_count": 28,
       "read_count": 185,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.5294P"
     },
@@ -8189,6 +8378,7 @@
       "citation_count": 20,
       "read_count": 184,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.488.4356B"
     },
@@ -8243,6 +8433,7 @@
       "citation_count": 10,
       "read_count": 231,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019A&A...632A.100H"
     },
@@ -8271,6 +8462,7 @@
       "citation_count": 5,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.23632....1S"
     },
@@ -8307,6 +8499,7 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.24359....1H"
     },
@@ -8336,6 +8529,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.24324....1H"
     },
@@ -8371,6 +8565,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.25589....1D"
     },
@@ -8405,6 +8600,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.24978....1D"
     },
@@ -8443,6 +8639,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.24368....1S"
     },
@@ -8478,6 +8675,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.23739....1D"
     },
@@ -8508,6 +8706,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.24092....1V"
     },
@@ -8530,6 +8729,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.24791....1S"
     },
@@ -8560,6 +8760,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2019GCN.24535....1C"
     },
@@ -8634,6 +8835,7 @@
       "citation_count": 159,
       "read_count": 255,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018NatAs...2...69Z"
     },
@@ -8665,6 +8867,7 @@
       "citation_count": 134,
       "read_count": 226,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018ApJ...867...57R"
     },
@@ -8725,6 +8928,7 @@
       "citation_count": 51,
       "read_count": 221,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018ApJ...865..107T"
     },
@@ -8773,6 +8977,7 @@
       "citation_count": 39,
       "read_count": 166,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018A&A...616A..48S"
     },
@@ -8840,6 +9045,7 @@
       "citation_count": 32,
       "read_count": 227,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018A&A...620A.119D"
     },
@@ -8881,6 +9087,7 @@
       "citation_count": 31,
       "read_count": 204,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.479.3456H"
     },
@@ -8940,6 +9147,7 @@
       "citation_count": 28,
       "read_count": 213,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018A&A...620A.190D"
     },
@@ -8988,6 +9196,7 @@
       "citation_count": 20,
       "read_count": 2,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018ApJ...861...48S"
     },
@@ -9024,6 +9233,7 @@
       "citation_count": 10,
       "read_count": 1,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018ATel11749....1D"
     },
@@ -9058,6 +9268,7 @@
       "citation_count": 8,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018ATel11753....1I"
     },
@@ -9132,6 +9343,7 @@
       "citation_count": 2,
       "read_count": 1,
       "doctype": "article",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018NatAs...2..258Z"
     },
@@ -9199,6 +9411,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018yCat..36200119D"
     },
@@ -9230,6 +9443,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2018yCat..74649056B"
     },
@@ -12927,6 +13141,7 @@
       "citation_count": 4057,
       "read_count": 2415,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2017ApJ...848L..12A"
     },
@@ -12981,6 +13196,7 @@
       "citation_count": 803,
       "read_count": 318,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2017Natur.551...71T"
     },
@@ -13026,6 +13242,7 @@
       "citation_count": 75,
       "read_count": 235,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2017A&A...605A.107C"
     },
@@ -13080,6 +13297,7 @@
       "citation_count": 56,
       "read_count": 223,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2017ApJ...850L..21K"
     },
@@ -13126,6 +13344,7 @@
       "citation_count": 36,
       "read_count": 226,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2017MNRAS.472.4480I"
     },
@@ -13157,6 +13376,7 @@
       "citation_count": 18,
       "read_count": 192,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2017MNRAS.464L..56B"
     },
@@ -13215,6 +13435,7 @@
       "citation_count": 17,
       "read_count": 249,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2017MNRAS.464.4624S"
     },
@@ -13269,8 +13490,9 @@
       "arxiv_id": "1709.01084",
       "abstract": "Previous studies have shown that the incidence rate of intervening strong Mg II absorbers towards gamma-ray bursts (GRBs) were a factor of 2-4 higher than towards quasars. Exploring the similar sized and uniformly selected legacy data sets XQ-100 and XSGRB, each consisting of 100 quasar and 81 GRB afterglow spectra obtained with a single instrument (VLT/X-shooter), we demonstrate that there is no disagreement in the number density of strong Mg II absorbers with rest-frame equivalent widths W_r<SUP>λ2796&gt;1</SUP> Å towardsGRBs and quasars in the redshift range 0.1 ≲ z ≲ 5. With large and similar sample sizes, and path length coverages of ∆z = 57.8 and 254.4 for GRBs and quasars, respectively, the incidences of intervening absorbers are consistent within 1σ uncertainty levels at all redshifts. For absorbers at z &lt; 2.3, the incidence towards GRBs is a factor of 1.5 ± 0.4 higher than the expected number of strong Mg II absorbers in Sloan Digital Sky Survey (SDSS) quasar spectra, while for quasar absorbers observed with X-shooter we find an excess factor of 1.4 ± 0.2 relative to SDSS quasars. Conversely, the incidence rates agree at all redshifts with reported high-spectral-resolution quasar data, and no excess is found. The only remaining discrepancy in incidences is between SDSS Mg II catalogues and high-spectral-resolution studies. The rest-frame equivalent-width distribution also agrees to within 1σ uncertainty levels between the GRB and quasar samples. Intervening strong Mg II absorbers towards GRBs are therefore neither unusually frequent, nor unusually strong. <P />Based on observations collected at the European Southern Observatory, Paranal, Chile, Program ID: 098.A-0055, 097.A-0036, 096.A-0079, 095.B-0811(B), 095.A-0045, 094.A-0134, 093.A-0069, 092.A-0124, 0091.C-0934, 090.A-0088, 089.A-0067, 088.A-0051, 087.A-0055, 086.A-0073, 085.A-0009 and 084.A-0260. XQ-100: 189.A-0424.",
       "citation_count": 14,
-      "read_count": 142,
+      "read_count": 143,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2017A&A...608A..84C"
     },
@@ -13305,6 +13527,7 @@
       "citation_count": 7,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2017GCN.22187....1D"
     },
@@ -13358,6 +13581,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2017GCN.21747....1S"
     },
@@ -14952,6 +15176,7 @@
       "citation_count": 264,
       "read_count": 2307,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...826L..13A"
     },
@@ -14992,6 +15217,7 @@
       "citation_count": 122,
       "read_count": 202,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...827..102T"
     },
@@ -15038,6 +15264,7 @@
       "citation_count": 113,
       "read_count": 325,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016A&A...594A..91L"
     },
@@ -15071,6 +15298,7 @@
       "citation_count": 74,
       "read_count": 215,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.456.4488S"
     },
@@ -16668,6 +16896,7 @@
       "citation_count": 53,
       "read_count": 430,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016ApJS..225....8A"
     },
@@ -16699,6 +16928,7 @@
       "citation_count": 44,
       "read_count": 268,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.463.3021B"
     },
@@ -16755,6 +16985,7 @@
       "citation_count": 35,
       "read_count": 158,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.455.3312G"
     },
@@ -16798,6 +17029,7 @@
       "citation_count": 8,
       "read_count": 158,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016AdAst2016E..12J"
     },
@@ -16830,6 +17062,7 @@
       "citation_count": 8,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016GCN.20342....1D"
     },
@@ -16853,6 +17086,7 @@
       "citation_count": 6,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016GCN.18966....1D"
     },
@@ -16881,6 +17115,7 @@
       "citation_count": 5,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016GCN.19245....1D"
     },
@@ -16914,6 +17149,7 @@
       "citation_count": 4,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016GCN.19710....1C"
     },
@@ -16947,6 +17183,7 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016GCN.19632....1C"
     },
@@ -16976,6 +17213,7 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016GCN.20069....1D"
     },
@@ -17002,6 +17240,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016GCN.18925....1S"
     },
@@ -17029,6 +17268,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016GCN.19971....1K"
     },
@@ -17062,6 +17302,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016yCat..74564488S"
     },
@@ -17088,6 +17329,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2016GCN.18831....1D"
     },
@@ -17152,6 +17394,7 @@
       "citation_count": 191,
       "read_count": 326,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015A&A...581A.125K"
     },
@@ -17188,6 +17431,7 @@
       "citation_count": 39,
       "read_count": 278,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015MNRAS.452.1535C"
     },
@@ -17233,6 +17477,7 @@
       "citation_count": 37,
       "read_count": 203,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015A&A...581A..86M"
     },
@@ -17277,6 +17522,7 @@
       "citation_count": 37,
       "read_count": 127,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015A&A...579A..74J"
     },
@@ -17317,6 +17563,7 @@
       "citation_count": 27,
       "read_count": 182,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...813....1K"
     },
@@ -17341,6 +17588,7 @@
       "citation_count": 17,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015GCN.17758....1C"
     },
@@ -17480,6 +17728,7 @@
       "citation_count": 9,
       "read_count": 300,
       "doctype": "eprint",
+      "kind": "preprint",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015arXiv150603474A"
     },
@@ -17509,6 +17758,7 @@
       "citation_count": 8,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015GCN.17583....1D"
     },
@@ -17533,6 +17783,7 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015GCN.17278....1C"
     },
@@ -17563,6 +17814,7 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015GCN.18213....1D"
     },
@@ -17587,6 +17839,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015GCN.17697....1S"
     },
@@ -17626,6 +17879,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015GCN.18177....1S"
     },
@@ -17652,6 +17906,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "article",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015HiA....16..620D"
     },
@@ -17681,6 +17936,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015ATel.7998....1C"
     },
@@ -17745,6 +18001,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2015yCat..35810125K"
     },
@@ -17806,6 +18063,7 @@
       "citation_count": 299,
       "read_count": 290,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...781...13L"
     },
@@ -17891,6 +18149,7 @@
       "citation_count": 123,
       "read_count": 256,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014A&A...566A.102S"
     },
@@ -17954,6 +18213,7 @@
       "citation_count": 95,
       "read_count": 225,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014A&A...563A..62D"
     },
@@ -18039,6 +18299,7 @@
       "citation_count": 91,
       "read_count": 278,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014A&A...568A..19C"
     },
@@ -18088,6 +18349,7 @@
       "citation_count": 83,
       "read_count": 200,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...785..150S"
     },
@@ -18135,6 +18397,7 @@
       "citation_count": 76,
       "read_count": 231,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.444..250E"
     },
@@ -18178,6 +18441,7 @@
       "citation_count": 61,
       "read_count": 243,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014A&A...564A..38D"
     },
@@ -18205,6 +18469,7 @@
       "citation_count": 16,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014SPIE.9152E..0BD"
     },
@@ -18246,6 +18511,7 @@
       "citation_count": 12,
       "read_count": 1391,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014A&A...569A..93J"
     },
@@ -18275,6 +18541,7 @@
       "citation_count": 10,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.16505....1C"
     },
@@ -18299,6 +18566,7 @@
       "citation_count": 9,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.15936....1J"
     },
@@ -18328,6 +18596,7 @@
       "citation_count": 5,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.16902....1D"
     },
@@ -18356,6 +18625,7 @@
       "citation_count": 4,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.16437....1H"
     },
@@ -18383,6 +18653,7 @@
       "citation_count": 3,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.16489....1M"
     },
@@ -18413,6 +18684,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014RMxAC..45...12T"
     },
@@ -18437,6 +18709,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.17167....1G"
     },
@@ -18474,6 +18747,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.15685....1G"
     },
@@ -18559,6 +18833,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014yCat..35680019C"
     },
@@ -18595,6 +18870,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.15922....1J"
     },
@@ -18629,6 +18905,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.16410....1C"
     },
@@ -18662,6 +18939,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.16554....1C"
     },
@@ -18695,6 +18973,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.16564....1C"
     },
@@ -18721,6 +19000,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.16335....1G"
     },
@@ -18753,6 +19033,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.16504....1C"
     },
@@ -18777,6 +19058,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2014GCN.16182....1A"
     },
@@ -18825,6 +19107,7 @@
       "citation_count": 129,
       "read_count": 218,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...776...98X"
     },
@@ -18880,6 +19163,7 @@
       "citation_count": 85,
       "read_count": 222,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013A&A...557A..18K"
     },
@@ -18937,6 +19221,7 @@
       "citation_count": 56,
       "read_count": 190,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...774..114J"
     },
@@ -18981,6 +19266,7 @@
       "citation_count": 51,
       "read_count": 204,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013A&A...556A..23E"
     },
@@ -19035,6 +19321,7 @@
       "citation_count": 29,
       "read_count": 194,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...766...41S"
     },
@@ -19096,6 +19383,7 @@
       "citation_count": 27,
       "read_count": 207,
       "doctype": "eprint",
+      "kind": "preprint",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013arXiv1312.5631C"
     },
@@ -19132,6 +19420,7 @@
       "citation_count": 20,
       "read_count": 138,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013MNRAS.432.1133M"
     },
@@ -19160,6 +19449,7 @@
       "citation_count": 12,
       "read_count": 1,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.15470....1D"
     },
@@ -19186,6 +19476,7 @@
       "citation_count": 11,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14437....1D"
     },
@@ -19220,6 +19511,7 @@
       "citation_count": 10,
       "read_count": 165,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013A&A...557L..18D"
     },
@@ -19254,6 +19546,7 @@
       "citation_count": 7,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013CBET.3529....1D"
     },
@@ -19279,6 +19572,7 @@
       "citation_count": 7,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14685....1S"
     },
@@ -19312,6 +19606,7 @@
       "citation_count": 7,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14646....1D"
     },
@@ -19352,6 +19647,7 @@
       "citation_count": 5,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14796....1C"
     },
@@ -19381,6 +19677,7 @@
       "citation_count": 5,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14747....1S"
     },
@@ -19414,31 +19711,9 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013CBET.3637....1D"
-    },
-    {
-      "bibcode": "2013CaMQ...52..166S",
-      "title": "Characterisation of non-ideal flow behaviour in continuous casting tundish",
-      "authors": [
-        "Sánchez-Ramírez, R.",
-        "Díaz-Cruz, M.",
-        "Macías-Salinas, R."
-      ],
-      "year": 2013,
-      "pubdate": "2013-04-00",
-      "journal": "Canadian Metallurgical Quarterly",
-      "bibstem": "CaMQ",
-      "volume": "52",
-      "page": "166",
-      "doi": "10.1179/1879139513Y.0000000059",
-      "arxiv_id": null,
-      "abstract": "The effect of a turbulence inhibitor and a curtain of rising bubbles on the flow pattern inside a continuous casting tundish have been experimentally evaluated using a water model. Water experiments were conducted using a two-fifths scale model of a typical strand tundish. Unlike previous studies, residence time distribution (RTD) curves were experimentally obtained in this work by first injecting a step change of an inert tracer (an aqueous NaCl solution) into the inlet stream and then detecting the response of the tracer inside the tundish at different water depths right above the outlet nozzle. A statistical expression based on the random walk model was used to represent and interpret the resulting experimental RTD curves in terms of the mean residence time θ<SUB>m</SUB> and the Bodenstein or dispersion number Bo. On a évalué expérimentalement l'effet d'un inhibiteur de turbulence et d'un rideau de bulles ascendantes sur la configuration de l'écoulement dans un panier de coulée continue en utilisant un modèle à l'eau. On a effectué les essais avec l'eau au moyen d'un modèle à échelle 2/5 d'un panier de coulée typique à volet. Contrairement aux études précédentes, on a obtenu expérimentalement dans ce travail les courbes de distribution du temps de séjour (RTD) en injectant d'abord un traceur inerte (une solution aqueuse de NaCl) avec changement soudain dans le courant d'entrée. On a ensuite détecté la réponse du traceur à l'intérieur du panier de coulée à différentes profondeurs juste au-dessus de la buse de sortie. On a utilisé une équation statistique basée sur le modèle de parcours aléatoire pour représenter et interpréter les courbes expérimentales de RTD par rapport au temps de séjour moyen θ et au nombre de Bodenstein ou indice de dispersion Bo.",
-      "citation_count": 3,
-      "read_count": 0,
-      "doctype": "article",
-      "refereed": true,
-      "ads_url": "https://ui.adsabs.harvard.edu/abs/2013CaMQ...52..166S"
     },
     {
       "bibcode": "2013GCN.14380....1D",
@@ -19464,6 +19739,7 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14380....1D"
     },
@@ -19508,6 +19784,7 @@
       "citation_count": 2,
       "read_count": 147,
       "doctype": "eprint",
+      "kind": "preprint",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013arXiv1308.5520E"
     },
@@ -19540,6 +19817,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013RMxAC..42..113S"
     },
@@ -19578,6 +19856,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013RMxAC..42...36C"
     },
@@ -19612,6 +19891,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013CBET.3531....1D"
     },
@@ -19645,6 +19925,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14303....1D"
     },
@@ -19683,6 +19964,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14790....1C"
     },
@@ -19722,6 +20004,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013EPJWC..6101003C"
     },
@@ -19751,6 +20034,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14535....1G"
     },
@@ -19777,6 +20061,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14390....1K"
     },
@@ -19804,6 +20089,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.15408....1D"
     },
@@ -19834,6 +20120,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013EAS....61..345P"
     },
@@ -19866,6 +20153,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013EAS....61..279C"
     },
@@ -19916,6 +20204,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013EAS....61..251G"
     },
@@ -19945,6 +20234,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013EAS....61..235G"
     },
@@ -19982,6 +20272,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013EAS....61..267S"
     },
@@ -20037,6 +20328,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013yCat..35570018K"
     },
@@ -20073,6 +20365,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013hsa7.conf..185C"
     },
@@ -20107,6 +20400,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013hsa7.conf..230G"
     },
@@ -20143,6 +20437,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013hsa7.conf..399S"
     },
@@ -20174,6 +20469,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013hsa7.conf..463S"
     },
@@ -20198,6 +20494,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013RMxAC..42...73D"
     },
@@ -20223,6 +20520,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14881....1T"
     },
@@ -20248,6 +20546,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14829....1T"
     },
@@ -20276,6 +20575,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14609....1T"
     },
@@ -20305,6 +20605,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14564....1G"
     },
@@ -20330,6 +20631,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14385....1T"
     },
@@ -20356,6 +20658,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14302....1D"
     },
@@ -20390,6 +20693,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013ghth.confE...6D"
     },
@@ -20419,6 +20723,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013ghth.confE...5G"
     },
@@ -20447,6 +20752,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2013GCN.14312....1T"
     },
@@ -20481,6 +20787,7 @@
       "citation_count": 64,
       "read_count": 160,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012A&A...548A..11D"
     },
@@ -20539,6 +20846,7 @@
       "citation_count": 64,
       "read_count": 219,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012MNRAS.421.1874G"
     },
@@ -20586,6 +20894,7 @@
       "citation_count": 59,
       "read_count": 329,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012A&A...538A..44D"
     },
@@ -20666,6 +20975,7 @@
       "citation_count": 48,
       "read_count": 279,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...751...90Z"
     },
@@ -20718,6 +21028,7 @@
       "citation_count": 24,
       "read_count": 1,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012ASInC...7..313C"
     },
@@ -20745,6 +21056,7 @@
       "citation_count": 18,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13118....1T"
     },
@@ -20771,6 +21083,7 @@
       "citation_count": 14,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13628....1T"
     },
@@ -20816,6 +21129,7 @@
       "citation_count": 7,
       "read_count": 158,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012MNRAS.422.2044X"
     },
@@ -20842,6 +21156,7 @@
       "citation_count": 6,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012ATel.4388....1D"
     },
@@ -20866,6 +21181,7 @@
       "citation_count": 5,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13723....1S"
     },
@@ -20895,6 +21211,7 @@
       "citation_count": 4,
       "read_count": 0,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012A&A...548L...7T"
     },
@@ -20925,6 +21242,7 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.14035....1S"
     },
@@ -20953,6 +21271,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13550....1G"
     },
@@ -20987,6 +21306,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012ASInC...7...79T"
     },
@@ -21018,6 +21338,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13281....1S"
     },
@@ -21043,6 +21364,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13146....1S"
     },
@@ -21069,6 +21391,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13835....1T"
     },
@@ -21099,6 +21422,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012IAUS..279..380D"
     },
@@ -21135,6 +21459,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012EPJWC..3904002C"
     },
@@ -21193,6 +21518,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "dataset",
+      "kind": "article",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012yCat..74211874G"
     },
@@ -21218,6 +21544,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012ATel.4589....1D"
     },
@@ -21254,6 +21581,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.14026....1G"
     },
@@ -21278,6 +21606,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13363....1M"
     },
@@ -21306,6 +21635,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.12851....1T"
     },
@@ -21342,6 +21672,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13987....1G"
     },
@@ -21367,6 +21698,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13505....1A"
     },
@@ -21395,6 +21727,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13591....1G"
     },
@@ -21425,6 +21758,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.13293....1D"
     },
@@ -21450,6 +21784,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.12837....1S"
     },
@@ -21473,6 +21808,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2012GCN.12976....1G"
     },
@@ -21556,6 +21892,7 @@
       "citation_count": 352,
       "read_count": 222,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2011Sci...333..199L"
     },
@@ -21638,6 +21975,7 @@
       "citation_count": 153,
       "read_count": 4,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2011Natur.478..493S"
     },
@@ -21697,6 +22035,7 @@
       "citation_count": 50,
       "read_count": 226,
       "doctype": "article",
+      "kind": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2011A&A...535A.127V"
     },
@@ -21731,6 +22070,7 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2011AIPC.1358..109C"
     },
@@ -21761,6 +22101,7 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2011ATel.3496....1G"
     },
@@ -21788,6 +22129,7 @@
       "citation_count": 3,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2011GCN.11834....1T"
     },
@@ -21817,6 +22159,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2011GCN.12494....1G"
     },
@@ -21844,6 +22187,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2011GCN.12342....1S"
     },
@@ -21869,6 +22213,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "circular",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2011ATel.3673....1G"
     },
@@ -21899,6 +22244,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "inproceedings",
+      "kind": "proceedings",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2011tfa..confE..58L"
     },
@@ -21925,6 +22271,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2011GCN.12432....1S"
     },
@@ -21953,6 +22300,7 @@
       "citation_count": 0,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2011GCN.12350....1D"
     },
@@ -21987,6 +22335,7 @@
       "citation_count": 2,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2010GCN.11398....1D"
     },
@@ -22012,6 +22361,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2010GCN.11180....1S"
     },
@@ -22037,6 +22387,7 @@
       "citation_count": 1,
       "read_count": 0,
       "doctype": "newsletter",
+      "kind": "circular",
       "refereed": false,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2010GCN.11196....1T"
     }
