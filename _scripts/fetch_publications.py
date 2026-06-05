@@ -215,7 +215,24 @@ def is_target_author(paper: dict, orcid: str) -> bool:
             if excl in name_lc:
                 return False
 
-        # Accept: surname matches, no disqualifying ORCID, no excluded first name
+        # When ORCID is known but not present at this position (e.g. GCNs/ATels
+        # that were never claimed), require the first initial to be "R".
+        # This rules out Eduardo, Santiago, J.F., Ana, etc. while keeping every
+        # GCN/ATel entry, which ADS stores as "Sanchez-Ramirez, R."
+        if orcid:
+            if "," in author:
+                # Standard "Lastname, Firstname" → check what follows the comma
+                first_part = author.split(",", 1)[1].strip()
+                if first_part and first_part[0].upper() != "R":
+                    return False
+            else:
+                # First-name-first "Firstname Lastname" → check the leading token
+                parts = author.split()
+                if len(parts) > 1 and parts[0][0].upper() != "R":
+                    return False
+
+        # Accept: surname matches, no disqualifying ORCID, no excluded first name,
+        # and (when ORCID is known) initial is consistent with Rubén
         return True
 
     return False  # surname not found at all
