@@ -6,7 +6,7 @@ title: Home
 <div class="hero">
   <div class="hero-inner">
     <h1 class="hero-name">Rubén Sánchez-Ramírez</h1>
-    <p class="hero-sub">Gamma-ray bursts &nbsp;·&nbsp; High-energy transients &nbsp;·&nbsp; Absorption Spectroscopy</p>
+    <p class="hero-sub">Gamma-ray bursts &nbsp;·&nbsp; High-energy transients &nbsp;·&nbsp; Multimessenger astronomy &nbsp;·&nbsp; Absorption Spectroscopy</p>
     <div class="hero-links">
       <a class="hero-link" href="{{ '/publications/' | relative_url }}" data-i18n="nav-pubs">
         &#128196; Publications
@@ -51,14 +51,14 @@ title: Home
         I exploit GRBs and quasars as cosmic backlights to probe the chemical evolution of the
         Universe via high-z absorption spectroscopy, focusing on <strong>Damped Lyman-α systems</strong>
         (DLAs) — reservoirs of neutral gas for star formation. My statistical approach
-        (<strong>S-R et al. 2016</strong>; 70–100 citations) resolved systematic biases in the
+        (<strong>S-R et al. 2016</strong>) resolved systematic biases in the
         cosmological evolution of neutral hydrogen up to the epoch of reionization.
       </p>
       <p class="lang-es">
         Utilizo GRBs y cuásares como faros cósmicos para estudiar la evolución química del Universo
         mediante espectroscopía de absorción a alto redshift, centrada en <strong>sistemas DLA</strong>
         (sistemas Lyman-α amortiguados) — reservorios de gas neutro para la formación estelar.
-        Mi método estadístico (<strong>S-R et al. 2016</strong>; 70–100 citas) resolvió sesgos sistemáticos
+        Mi método estadístico (<strong>S-R et al. 2016</strong>) resolvió sesgos sistemáticos
         en la evolución cosmológica del hidrógeno neutro hasta la época de reionización.
       </p>
     </div>
@@ -69,14 +69,13 @@ title: Home
         Since the historic <strong>GW/GRB 170817A</strong> detection, I have been deeply involved in
         multi-messenger astronomy. I contributed to the optical/IR characterisation of the kilonova
         from the first binary neutron star merger, and led electromagnetic follow-up of gravitational
-        wave candidates during LIGO-Virgo-KAGRA runs O1–O4. I will coordinate future campaigns for O5.
+        wave candidates during LIGO-Virgo-KAGRA runs O1–O4.
       </p>
       <p class="lang-es">
         Desde la histórica detección de <strong>GW/GRB 170817A</strong>, estoy profundamente
         involucrado en la astronomía multimensajero. Contribuí a la caracterización óptica/IR de la
         kilonova del primer merger de estrellas de neutrones, y lideré el seguimiento electromagnético
         de candidatos a ondas gravitacionales en las campañas O1–O4 de LIGO-Virgo-KAGRA.
-        Coordinaré futuras campañas para O5.
       </p>
     </div>
 
