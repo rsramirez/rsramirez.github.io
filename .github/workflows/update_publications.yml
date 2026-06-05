@@ -42,8 +42,25 @@ jobs:
             echo "No changes to publications data."
           else
             git commit -m "chore: update publications data [skip ci]"
-            # Handle scheduled/manual run races where main moved since checkout
-            git fetch origin main
-            git rebase -X theirs origin/main
-            git push origin HEAD:main
+            # Handle scheduled/manual run races where main may move during this job
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                echo "Rebase failed while syncing with origin/main; aborting."
+                git rebase --abort || true
+                exit 1
+              fi
+
+              if git push origin HEAD:main; then
+                break
+              fi
+
+              if [ "$attempt" -eq 3 ]; then
+                echo "Push failed after 3 attempts."
+                exit 1
+              fi
+
+              echo "Push race detected, retrying (attempt $((attempt + 1))/3)..."
+              sleep $((attempt * 2))
+            done
           fi
