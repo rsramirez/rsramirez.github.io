@@ -11,6 +11,8 @@
   // Matches Sánchez-Ramírez / Sanchez-Ramirez case-insensitively
   const AUTHOR_RE    = /s[aá]nchez[\s-]*ram[ií]rez/i;
   const MAX_AUTHORS  = 8;  // authors shown before "et al."
+  // Fallback Q1 bibstem list — used when `p.q1` is absent (pre-workflow JSON)
+  const Q1_BIBSTEMS  = new Set(["A&A","MNRAS","ApJ","ApJL","ApJS","AJ","PASP","Natur","NatAs","NatCo","Sci","SciA","PhRvL","PhRvD","PhRvX","JCAP","ARA&A","A&ARv","PNAS"]);
 
   /* ── State ───────────────────────────────────────────────────────────────── */
   let allPapers      = [];
@@ -24,7 +26,7 @@
     journal:     "",
     minCit:      0,
     // catStates: 0 = included, 1 = excluded, 2 = show only
-    catStates:   { refereed: 0, preprint: 0, proceedings: 0, circular: 0 },
+    catStates:   { refereed: 0, q1: 0, preprint: 0, proceedings: 0, circular: 0 },
     sortBy:      "year",   // "year" | "citations" | "title"
   };
 
@@ -37,7 +39,7 @@
       "pub-search", "pub-year-from", "pub-year-to",
       "pub-journal", "pub-min-citations", "pub-sort",
       "pub-reset", "pub-updated", "pub-total",
-      "stat-total", "stat-refereed", "stat-preprint",
+      "stat-total", "stat-refereed", "stat-q1", "stat-preprint",
       "stat-proceedings", "stat-circular",
       "stat-citations", "stat-hindex",
     ];
@@ -135,10 +137,16 @@
     const totalCit = papers.reduce((s, p) => s + (p.citation_count || 0), 0);
     const hIndex   = computeHIndex(papers);
     const cats     = { refereed: 0, preprint: 0, proceedings: 0, circular: 0, other: 0 };
-    papers.forEach(p => { const c = getCategory(p); cats[c] = (cats[c] || 0) + 1; });
+    let q1Count    = 0;
+    papers.forEach(p => {
+      const c = getCategory(p);
+      cats[c] = (cats[c] || 0) + 1;
+      if (isQ1(p)) q1Count++;
+    });
 
     setText("stat-total",       papers.length);
     setText("stat-refereed",    cats.refereed);
+    setText("stat-q1",          q1Count);
     setText("stat-preprint",    cats.preprint);
     setText("stat-proceedings", cats.proceedings);
     setText("stat-circular",    cats.circular);
@@ -194,7 +202,7 @@
     if (el["pub-year-from"]) el["pub-year-from"].value = minY;
     if (el["pub-year-to"])   el["pub-year-to"].value   = maxY;
 
-    filters.catStates = { refereed: 0, preprint: 0, proceedings: 0, circular: 0 };
+    filters.catStates = { refereed: 0, q1: 0, preprint: 0, proceedings: 0, circular: 0 };
     document.querySelectorAll(".stat-filter").forEach(btn => { btn.dataset.state = "0"; });
 
     Object.assign(filters, {
@@ -208,7 +216,9 @@
   /* ── Filter + sort ───────────────────────────────────────────────────────── */
   function applyFilters() {
     const { search, yearFrom, yearTo, journal, minCit, catStates } = filters;
-    const hasOnly = Object.values(catStates).some(s => s === 2);
+    // Q1 is orthogonal to category — handle it separately
+    const q1State = catStates.q1 || 0;
+    const hasOnly = Object.entries(catStates).some(([k, s]) => k !== "q1" && s === 2);
 
     filteredPapers = allPapers.filter(p => {
       if (p.year < yearFrom || p.year > yearTo)     return false;
@@ -221,6 +231,10 @@
       } else {
         if ((catStates[cat] || 0) === 1) return false;
       }
+      // Q1 filter (independent of category)
+      const q1 = isQ1(p);
+      if (q1State === 2 && !q1) return false;
+      if (q1State === 1 &&  q1) return false;
       if (search) {
         const haystack = [
           p.title, ...(p.authors || []), p.journal, p.abstract || "",
@@ -344,24 +358,32 @@
 
   /* ── Category classifier ────────────────────────────────────────────────── */
   function getCategory(p) {
+    // Use `kind` written by fetch_publications.py when available
+    if (p.kind) {
+      if (p.kind === "circular")    return "circular";
+      if (p.kind === "preprint")    return "preprint";
+      if (p.kind === "proceedings") return "proceedings";
+      // kind === "article" | "thesis" | unknown
+      return p.refereed ? "refereed" : "other";
+    }
+    // Fallback for JSON without `kind` (pre-workflow data)
     if (p.refereed) return "refereed";
     const dt = (p.doctype || "").toLowerCase();
     if (dt === "eprint") return "preprint";
     const j = (p.journal || "").toLowerCase();
     if (
-      dt === "circular" ||
-      j.includes("gcn") ||
-      j.includes("atel") ||
-      j.includes("telegram") ||
-      j.includes("astronomer")
+      dt === "circular" || dt === "newsletter" ||
+      j.includes("gcn") || j.includes("atel") ||
+      j.includes("telegram") || j.includes("astronomer")
     ) return "circular";
-    if (
-      dt === "inproceedings" ||
-      dt === "inbook" ||
-      dt === "proceedings" ||
-      dt === "abstract"
-    ) return "proceedings";
+    if (dt === "inproceedings" || dt === "inbook" || dt === "proceedings" || dt === "abstract")
+      return "proceedings";
     return "other";
+  }
+
+  function isQ1(p) {
+    // Use field from JSON when present; fall back to bibstem lookup
+    return p.q1 ?? Q1_BIBSTEMS.has(p.bibstem);
   }
 
   function formatAuthors(authors) {

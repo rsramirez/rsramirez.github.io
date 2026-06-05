@@ -27,6 +27,11 @@ title: Publications
       <span class="stat-value" id="stat-refereed">—</span>
       <span class="stat-label">Refereed</span>
     </button>
+    <button class="stat-card stat-filter" data-cat="q1" data-state="0"
+            title="1 click: exclude · 2 clicks: show only · 3 clicks: reset">
+      <span class="stat-value" id="stat-q1">—</span>
+      <span class="stat-label">Q1</span>
+    </button>
     <button class="stat-card stat-filter" data-cat="preprint" data-state="0"
             title="1 click: exclude · 2 clicks: show only · 3 clicks: reset">
       <span class="stat-value" id="stat-preprint">—</span>

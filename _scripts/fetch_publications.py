@@ -53,6 +53,29 @@ EXCLUDE_BIBCODES: set[str] = {
 # (GCN uses doctype "newsletter"; ATel/CBET use "circular")
 CIRCULAR_BIBSTEMS: set[str] = {"GCN", "ATel", "CBET", "IAUC", "GCNr", "GCNi"}
 
+# Q1 journals in astrophysics (Scimago / CiteScore first-quartile)
+Q1_BIBSTEMS: set[str] = {
+    "A&A",   # Astronomy and Astrophysics
+    "MNRAS", # Monthly Notices of the Royal Astronomical Society
+    "ApJ",   # The Astrophysical Journal
+    "ApJL",  # The Astrophysical Journal Letters
+    "ApJS",  # The Astrophysical Journal Supplement Series
+    "AJ",    # The Astronomical Journal
+    "PASP",  # Publications of the Astronomical Society of the Pacific
+    "Natur", # Nature
+    "NatAs", # Nature Astronomy
+    "NatCo", # Nature Communications
+    "Sci",   # Science
+    "SciA",  # Science Advances
+    "PhRvL", # Physical Review Letters
+    "PhRvD", # Physical Review D
+    "PhRvX", # Physical Review X
+    "JCAP",  # Journal of Cosmology and Astroparticle Physics
+    "ARA&A", # Annual Review of Astronomy and Astrophysics
+    "A&ARv", # Astronomy and Astrophysics Review
+    "PNAS",  # Proceedings of the National Academy of Sciences
+}
+
 # ADS fields to retrieve
 ADS_FIELDS = [
     "bibcode", "title", "author", "year", "pubdate",
@@ -304,6 +327,7 @@ def normalise(paper: dict) -> dict:
         "doctype":        doctype,
         "kind":           _kind(bibstem, doctype),
         "refereed":       "REFEREED" in props,
+        "q1":             bibstem in Q1_BIBSTEMS,
         "ads_url":        f"https://ui.adsabs.harvard.edu/abs/{bibcode}",
     }
 
