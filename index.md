@@ -30,36 +30,16 @@ title: Home
     <div class="cv-pillar cv-pillar--1">
       <h4 data-i18n="cv-pillar1-title">GRB Afterglow Physics &amp; Progenitors</h4>
       <p class="lang-en">
-        Since 2010 I have characterised GRB afterglows through panchromatic light curves
-        (radio to X-rays) to constrain jet structures, microphysical parameters, and circumstellar
-        environments. A landmark result is our analysis of <strong>GRB 221009A</strong> — the
-        brightest GRB ever recorded ("The BOAT") — probing particle acceleration up to <strong>18 TeV</strong>
-        and addressing Lorentz Invariance Violation.
       </p>
       <p class="lang-es">
-        Desde 2010 caracterizo destellos de GRBs mediante curvas de luz pancromáticas
-        (radio a rayos X) para acotar estructuras de chorro, parámetros microfísicos y entornos
-        circunestelares. Un resultado emblemático es nuestro análisis de <strong>GRB 221009A</strong> —
-        el GRB más brillante jamás registrado ("The BOAT") —, que sondea la aceleración de partículas
-        hasta <strong>18 TeV</strong> y aborda la violación de la invariancia de Lorentz.
       </p>
     </div>
 
     <div class="cv-pillar cv-pillar--2">
       <h4 data-i18n="cv-pillar2-title">High-Redshift Spectroscopy</h4>
       <p class="lang-en">
-        I exploit GRBs and quasars as cosmic backlights to probe the chemical evolution of the
-        Universe via high-z absorption spectroscopy, focusing on <strong>Damped Lyman-α systems</strong>
-        (DLAs) — reservoirs of neutral gas for star formation. My statistical approach
-        (<strong>S-R et al. 2016</strong>) resolved systematic biases in the
-        cosmological evolution of neutral hydrogen up to the epoch of reionization.
       </p>
       <p class="lang-es">
-        Utilizo GRBs y cuásares como faros cósmicos para estudiar la evolución química del Universo
-        mediante espectroscopía de absorción a alto redshift, centrada en <strong>sistemas DLA</strong>
-        (sistemas Lyman-α amortiguados) — reservorios de gas neutro para la formación estelar.
-        Mi método estadístico (<strong>S-R et al. 2016</strong>) resolvió sesgos sistemáticos
-        en la evolución cosmológica del hidrógeno neutro hasta la época de reionización.
       </p>
     </div>
 
