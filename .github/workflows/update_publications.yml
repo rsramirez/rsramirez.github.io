@@ -42,5 +42,8 @@ jobs:
             echo "No changes to publications data."
           else
             git commit -m "chore: update publications data [skip ci]"
-            git push
+            # Handle scheduled/manual run races where main moved since checkout
+            git fetch origin main
+            git rebase -X theirs origin/main
+            git push origin HEAD:main
           fi
