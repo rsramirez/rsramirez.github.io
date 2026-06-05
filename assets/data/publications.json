@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-05T10:50:13Z",
+  "updated": "2026-06-05T10:51:05Z",
   "total": 376,
   "journals": [
     "37th International Cosmic Ray Conference",
@@ -68,7 +68,7 @@
       "doi": "10.3847/2041-8213/ae2dea",
       "arxiv_id": "2510.18854",
       "abstract": "AT2025ulz is an optical/near-infrared transient discovered during follow-up of the candidate gravitational wave (GW) event S250818k. Its young age (≲1 day), rapid decline, and strong color evolution over the first 48 hr classify it as a potential kilonova candidate. In this work, we present the results of our observing campaign, carried out with the Gran Telescopio Canarias and the Hubble Space Telescope (HST). Although the early time evolution of AT2025ulz resembles some aspects of a kilonova, its rapid onset (∼3 hr after the GW trigger) and luminosity (a factor of ∼5 brighter than AT2017gfo in g band) are difficult to reproduce. Only a small subset of our kilonova models matches its multicolor light curve, and the inferred ejecta mass is uncomfortably large given the low chirp mass (≲0.87 M<SUB>⊙</SUB>) of the GW candidate. HST observations place the transient within a nearby (z = 0.08489) spiral galaxy with ongoing star formation and measure a color (F336W − F160W ≍ 1.4 mag) that is too blue to match with a kilonova. Our data support the classification of AT2025ulz as a supernova, initially undergoing a shock-cooling phase and later entering its photospheric phase and spectroscopically identified via its broad absorption features.",
-      "citation_count": 9,
+      "citation_count": 10,
       "read_count": 353,
       "doctype": "article",
       "refereed": true,
@@ -13269,7 +13269,7 @@
       "arxiv_id": "1709.01084",
       "abstract": "Previous studies have shown that the incidence rate of intervening strong Mg II absorbers towards gamma-ray bursts (GRBs) were a factor of 2-4 higher than towards quasars. Exploring the similar sized and uniformly selected legacy data sets XQ-100 and XSGRB, each consisting of 100 quasar and 81 GRB afterglow spectra obtained with a single instrument (VLT/X-shooter), we demonstrate that there is no disagreement in the number density of strong Mg II absorbers with rest-frame equivalent widths W_r<SUP>λ2796&gt;1</SUP> Å towardsGRBs and quasars in the redshift range 0.1 ≲ z ≲ 5. With large and similar sample sizes, and path length coverages of ∆z = 57.8 and 254.4 for GRBs and quasars, respectively, the incidences of intervening absorbers are consistent within 1σ uncertainty levels at all redshifts. For absorbers at z &lt; 2.3, the incidence towards GRBs is a factor of 1.5 ± 0.4 higher than the expected number of strong Mg II absorbers in Sloan Digital Sky Survey (SDSS) quasar spectra, while for quasar absorbers observed with X-shooter we find an excess factor of 1.4 ± 0.2 relative to SDSS quasars. Conversely, the incidence rates agree at all redshifts with reported high-spectral-resolution quasar data, and no excess is found. The only remaining discrepancy in incidences is between SDSS Mg II catalogues and high-spectral-resolution studies. The rest-frame equivalent-width distribution also agrees to within 1σ uncertainty levels between the GRB and quasar samples. Intervening strong Mg II absorbers towards GRBs are therefore neither unusually frequent, nor unusually strong. <P />Based on observations collected at the European Southern Observatory, Paranal, Chile, Program ID: 098.A-0055, 097.A-0036, 096.A-0079, 095.B-0811(B), 095.A-0045, 094.A-0134, 093.A-0069, 092.A-0124, 0091.C-0934, 090.A-0088, 089.A-0067, 088.A-0051, 087.A-0055, 086.A-0073, 085.A-0009 and 084.A-0260. XQ-100: 189.A-0424.",
       "citation_count": 14,
-      "read_count": 143,
+      "read_count": 142,
       "doctype": "article",
       "refereed": true,
       "ads_url": "https://ui.adsabs.harvard.edu/abs/2017A&A...608A..84C"
