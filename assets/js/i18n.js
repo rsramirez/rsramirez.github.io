@@ -11,6 +11,11 @@
       "nav-pubs":          "Publications",
       "footer-data":       "Data from",
       "footer-built":      "Built with",
+      // Under-construction home page
+      "construction-kicker":       "Website update",
+      "construction-title":        "Under construction",
+      "construction-message":      "A new website is on its way. In the meantime, you can browse my publications.",
+      "construction-publications": "Browse publications",
       // Page header
       "page-title":        "Publications",
       "meta-total-label":  "total",
@@ -79,6 +84,11 @@
       "nav-pubs":          "Publicaciones",
       "footer-data":       "Datos de",
       "footer-built":      "Construido con",
+      // Página de inicio en construcción
+      "construction-kicker":       "Actualización del sitio web",
+      "construction-title":        "Página en construcción",
+      "construction-message":      "Estoy preparando una nueva web. Mientras tanto, puedes consultar mis publicaciones.",
+      "construction-publications": "Ver publicaciones",
       // Page header
       "page-title":        "Publicaciones",
       "meta-total-label":  "en total",

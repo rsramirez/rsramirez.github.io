@@ -149,6 +149,78 @@ a:hover { text-decoration: underline; }
   padding: 0 1.5rem;
 }
 
+/* ─── Under-construction home page ──────────────────────────────────────── */
+.construction {
+  min-height: calc(100vh - var(--nav-h) - 8rem);
+  display: grid;
+  place-items: center;
+  padding: 3rem 1.5rem;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(21, 101, 192, .15), transparent 30rem),
+    radial-gradient(circle at 85% 80%, rgba(123, 31, 162, .1), transparent 28rem);
+}
+.construction-card {
+  max-width: 39rem;
+  padding: clamp(2rem, 7vw, 4rem);
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow-lg);
+}
+.construction-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1.25rem;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), #7b1fa2);
+  font-size: 1.5rem;
+}
+.construction-kicker {
+  margin-bottom: .6rem;
+  color: var(--accent);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.construction h1 {
+  color: var(--primary);
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -.045em;
+  line-height: 1.1;
+}
+.construction-message {
+  max-width: 32rem;
+  margin: 1rem auto 1.75rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+.construction-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: .6rem 1.1rem;
+  border-radius: var(--radius-sm);
+  color: #fff;
+  background: var(--accent);
+  font-size: .9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .15s, transform .15s;
+}
+.construction-link:hover {
+  color: #fff;
+  background: var(--accent-hover);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
 /* ─── Language visibility ─────────────────────────────────────────────────── */
 html[lang="es"] .lang-en { display: none; }
 html[lang="en"] .lang-es { display: none; }
@@ -691,4 +763,6 @@ select {
   .pub-stats { gap: .5rem; }
   .stat-card { padding: .6rem .85rem; min-width: 90px; }
   .cv-metrics { grid-template-columns: repeat(2, 1fr); }
+  .construction { padding: 2rem 1rem; }
+  .construction-card { padding: 2rem 1.5rem; }
 }
